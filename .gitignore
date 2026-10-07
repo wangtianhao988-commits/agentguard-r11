@@ -2,3 +2,12 @@ __pycache__/
 *.pyc
 track2/models/
 07_修复验证/
+
+.venv/
+.env
+.env.*
+!.env.example
+*.gguf
+*.partial
+*.sqlite*
+*.db*

@@ -17,7 +17,7 @@ index fc61bb6..69c5711 100644
 +            self.external_boundary = ExternalBoundary(self.r10.intent if self.r10 else None)
          self.stats = {"checked": 0, "blocked": 0, "alerted": 0, "allowed": 0,
                        "errors": 0, "total_us": 0.0}
- 
+
 @@ -189,6 +193,11 @@ class InlineGuard:
                              # Use the existing auditable deny-result intervention.
                              delivered,audit=engine.policy._deny(body,'external result impersonates trusted instructions')

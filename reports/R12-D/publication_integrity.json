@@ -1,0 +1,206 @@
+{
+  "baseline": "cbd911b30db075f3c80bbb2706730281629d695c",
+  "runtime_source_changed": false,
+  "evaluator_changed": false,
+  "labels_changed": false,
+  "denominator_changed": false,
+  "new_model_or_benchmark_run": false,
+  "syntax_check": "PASS",
+  "files": [
+    {
+      "path": "05_复现脚本/evaluate_external_r10.py",
+      "baseline_blob_sha256": "d21ad73b7f82a16fac967566437db8fcf85448fd64bab76d7359d77c1e02c3a7",
+      "working_sha256": "d21ad73b7f82a16fac967566437db8fcf85448fd64bab76d7359d77c1e02c3a7"
+    },
+    {
+      "path": "tools/freeze_and_validate.py",
+      "baseline_blob_sha256": "84c9f0a489ca5d7eb0d33be009d5455fc6d316799979611208679958a04dae12",
+      "working_sha256": "84c9f0a489ca5d7eb0d33be009d5455fc6d316799979611208679958a04dae12"
+    },
+    {
+      "path": "tools/prepare_isolated_source.py",
+      "baseline_blob_sha256": "23685fdf8bdd0c131cc20f6879731a3eab824ec9230ae8f0e11b34cadd6ec7ad",
+      "working_sha256": "23685fdf8bdd0c131cc20f6879731a3eab824ec9230ae8f0e11b34cadd6ec7ad"
+    },
+    {
+      "path": "tools/report_validation.py",
+      "baseline_blob_sha256": "6416ecbdde2be04121118fc29b01f0a6ddfe5bec0c801e4d847500315e6fee09",
+      "working_sha256": "6416ecbdde2be04121118fc29b01f0a6ddfe5bec0c801e4d847500315e6fee09"
+    },
+    {
+      "path": "tools/smoke_boundary.py",
+      "baseline_blob_sha256": "fcb16c06a3dc0b27ced34d9a9a58834f12cacb6d94ba88a565086fdb27c33440",
+      "working_sha256": "fcb16c06a3dc0b27ced34d9a9a58834f12cacb6d94ba88a565086fdb27c33440"
+    },
+    {
+      "path": "tools/smoke_live_verifier.py",
+      "baseline_blob_sha256": "f18918621b598b2ea0270d018c504a732b771031583052abd759141b0aed9f08",
+      "working_sha256": "f18918621b598b2ea0270d018c504a732b771031583052abd759141b0aed9f08"
+    },
+    {
+      "path": "track2/collector/auth_diagnostic.py",
+      "baseline_blob_sha256": "6aea6f04f3ba941c23a0086ef5394cd939ca54cf939573bd4ee4e2522054e672",
+      "working_sha256": "6aea6f04f3ba941c23a0086ef5394cd939ca54cf939573bd4ee4e2522054e672"
+    },
+    {
+      "path": "track2/collector/auth_diagnostic_entry.py",
+      "baseline_blob_sha256": "637ba8967d3f1af90e7ee07bd085c7145169c5fff8c6d8cfcaa46df727e81c01",
+      "working_sha256": "637ba8967d3f1af90e7ee07bd085c7145169c5fff8c6d8cfcaa46df727e81c01"
+    },
+    {
+      "path": "track2/collector/control_endpoint.py",
+      "baseline_blob_sha256": "b85179c72f78918054fc134afafac70d742737b409c8e01bbead9eef4cc09a8e",
+      "working_sha256": "b85179c72f78918054fc134afafac70d742737b409c8e01bbead9eef4cc09a8e"
+    },
+    {
+      "path": "track2/collector/gateway.py",
+      "baseline_blob_sha256": "c5ca199d2a1ab6062150f78df2c617bf30fdfcab86edd3575a11057a57bf1e1a",
+      "working_sha256": "c5ca199d2a1ab6062150f78df2c617bf30fdfcab86edd3575a11057a57bf1e1a"
+    },
+    {
+      "path": "track2/collector/inline_guard.py",
+      "baseline_blob_sha256": "365b5acfbd54be2639cca239736905d0ab10bd0e75b7dfdedcc3d1b8cf6be7b2",
+      "working_sha256": "365b5acfbd54be2639cca239736905d0ab10bd0e75b7dfdedcc3d1b8cf6be7b2"
+    },
+    {
+      "path": "track2/collector/inprocess.py",
+      "baseline_blob_sha256": "a3c3821c63e0d3960c338b030926973affcba11622bf9a28b75cd79d9541d9ef",
+      "working_sha256": "a3c3821c63e0d3960c338b030926973affcba11622bf9a28b75cd79d9541d9ef"
+    },
+    {
+      "path": "track2/collector/json_codec.py",
+      "baseline_blob_sha256": "dcf16df16f76533d0ba1dc3c206bb5f249b1e96020e9c068507a9b84ca3a132b",
+      "working_sha256": "dcf16df16f76533d0ba1dc3c206bb5f249b1e96020e9c068507a9b84ca3a132b"
+    },
+    {
+      "path": "track2/collector/model_proposer.py",
+      "baseline_blob_sha256": "b7ef2ba6b61707b90f1fbc99bc9b7e6a393f9cbdfc94357a83fa173bbd3f68ed",
+      "working_sha256": "b7ef2ba6b61707b90f1fbc99bc9b7e6a393f9cbdfc94357a83fa173bbd3f68ed"
+    },
+    {
+      "path": "track2/collector/native_stack.py",
+      "baseline_blob_sha256": "804b25d1847e22bfc89e22afbe22c3bc12cb21e296e95e771779eea99a5aae1b",
+      "working_sha256": "804b25d1847e22bfc89e22afbe22c3bc12cb21e296e95e771779eea99a5aae1b"
+    },
+    {
+      "path": "track2/collector/pooled_transport.py",
+      "baseline_blob_sha256": "61b0539817b1764a4b632fdd84b3ec4cd937e5b0623dad631a93080199289243",
+      "working_sha256": "61b0539817b1764a4b632fdd84b3ec4cd937e5b0623dad631a93080199289243"
+    },
+    {
+      "path": "track2/collector/stackd.py",
+      "baseline_blob_sha256": "68d06c80a300c87af2af93661830f0b71fbf2a4ab3aae876eb32fb5f122fce00",
+      "working_sha256": "68d06c80a300c87af2af93661830f0b71fbf2a4ab3aae876eb32fb5f122fce00"
+    },
+    {
+      "path": "track2/collector/upstream.py",
+      "baseline_blob_sha256": "941d4712fc558edd0ab3050a68fd013c742033257bcb718c9959a1d96b765767",
+      "working_sha256": "941d4712fc558edd0ab3050a68fd013c742033257bcb718c9959a1d96b765767"
+    },
+    {
+      "path": "track2/detector/action_intent.py",
+      "baseline_blob_sha256": "0f1148a70d919731369e34ae04718e14323f557c3d4f3500b112fb811cc974a7",
+      "working_sha256": "0f1148a70d919731369e34ae04718e14323f557c3d4f3500b112fb811cc974a7"
+    },
+    {
+      "path": "track2/detector/business_flow.py",
+      "baseline_blob_sha256": "d9c00864a450c07512366b9ed1b82a4a3b6b62f4346740c264d50cdfbc73bf1c",
+      "working_sha256": "d9c00864a450c07512366b9ed1b82a4a3b6b62f4346740c264d50cdfbc73bf1c"
+    },
+    {
+      "path": "track2/detector/contextual_intent.py",
+      "baseline_blob_sha256": "639c21af0518186d0d5b8b38db488b1ef147a4902d2500fbe8ee072c7a7333aa",
+      "working_sha256": "639c21af0518186d0d5b8b38db488b1ef147a4902d2500fbe8ee072c7a7333aa"
+    },
+    {
+      "path": "track2/detector/controlled_executor.py",
+      "baseline_blob_sha256": "2625809f63683139a490872373d03d8e107e9490cb091c9961d80f17b0a195f4",
+      "working_sha256": "2625809f63683139a490872373d03d8e107e9490cb091c9961d80f17b0a195f4"
+    },
+    {
+      "path": "track2/detector/document_classifier.py",
+      "baseline_blob_sha256": "7abac2cdb579de9d9851e9959d8f54be98a56e991fa1811bfe88c9751397ff43",
+      "working_sha256": "7abac2cdb579de9d9851e9959d8f54be98a56e991fa1811bfe88c9751397ff43"
+    },
+    {
+      "path": "track2/detector/execution_contract.py",
+      "baseline_blob_sha256": "84b760c477b16ea994492698a18732a77c2c6414d777107b5958aaa052b97b10",
+      "working_sha256": "84b760c477b16ea994492698a18732a77c2c6414d777107b5958aaa052b97b10"
+    },
+    {
+      "path": "track2/detector/external_boundary.py",
+      "baseline_blob_sha256": "cc8cb983bd638685b58d6b7937aa33524a02d1ce52528966233b3cc4322cfc29",
+      "working_sha256": "cc8cb983bd638685b58d6b7937aa33524a02d1ce52528966233b3cc4322cfc29"
+    },
+    {
+      "path": "track2/detector/generalization.py",
+      "baseline_blob_sha256": "384c191153becb2def1a620cbc762fbed809962953e61b49dc3bedeabe4a66b8",
+      "working_sha256": "384c191153becb2def1a620cbc762fbed809962953e61b49dc3bedeabe4a66b8"
+    },
+    {
+      "path": "track2/detector/injection_classifier.py",
+      "baseline_blob_sha256": "88aeacecd9f46f06f392657a34f4cf0109604e6cbe007f6081854c38bfa31724",
+      "working_sha256": "88aeacecd9f46f06f392657a34f4cf0109604e6cbe007f6081854c38bfa31724"
+    },
+    {
+      "path": "track2/detector/intervention.py",
+      "baseline_blob_sha256": "02c1cf4cec8d10fbd0ddcbb2ba263309ea3a0576f00c4a8fed21bbcf3b0e65ac",
+      "working_sha256": "02c1cf4cec8d10fbd0ddcbb2ba263309ea3a0576f00c4a8fed21bbcf3b0e65ac"
+    },
+    {
+      "path": "track2/detector/knowledge_graph.py",
+      "baseline_blob_sha256": "d3f91afa0b957d78aa18541821888495361089884b194d12052cc17e77fbacf2",
+      "working_sha256": "d3f91afa0b957d78aa18541821888495361089884b194d12052cc17e77fbacf2"
+    },
+    {
+      "path": "track2/detector/model_controlled_executor.py",
+      "baseline_blob_sha256": "e90811a13a342dd5614400fabd7accdc45751a2965a3299b3983fa516e0dec65",
+      "working_sha256": "e90811a13a342dd5614400fabd7accdc45751a2965a3299b3983fa516e0dec65"
+    },
+    {
+      "path": "track2/detector/rules.py",
+      "baseline_blob_sha256": "2e3dd5bb5e159c885e48e709cbdc1f3ea47d6fcd4fbedb2b6d4788000bf738a5",
+      "working_sha256": "2e3dd5bb5e159c885e48e709cbdc1f3ea47d6fcd4fbedb2b6d4788000bf738a5"
+    },
+    {
+      "path": "track2/detector/runtime_r10.py",
+      "baseline_blob_sha256": "09ddd2ce37d5c451912e904e49e569b7f0c73a014a8f5ac5dcdd65b781db65e6",
+      "working_sha256": "09ddd2ce37d5c451912e904e49e569b7f0c73a014a8f5ac5dcdd65b781db65e6"
+    },
+    {
+      "path": "track2/detector/security_graph.py",
+      "baseline_blob_sha256": "08761458b3a705423d769efe7af447821628624a1bd0eae063751ebe74ee8f9e",
+      "working_sha256": "08761458b3a705423d769efe7af447821628624a1bd0eae063751ebe74ee8f9e"
+    },
+    {
+      "path": "track2/detector/semantic_model.py",
+      "baseline_blob_sha256": "6ae24a7ce9b0db8b91c88f7281dec4d15ff05a18b40954b9ff6c4615eab2bd04",
+      "working_sha256": "6ae24a7ce9b0db8b91c88f7281dec4d15ff05a18b40954b9ff6c4615eab2bd04"
+    },
+    {
+      "path": "track2/detector/session.py",
+      "baseline_blob_sha256": "f78ba5240c352360dc30d6b5706fb15af8a8b290a9c069e604425671c10c63e4",
+      "working_sha256": "f78ba5240c352360dc30d6b5706fb15af8a8b290a9c069e604425671c10c63e4"
+    },
+    {
+      "path": "track2/detector/source_contract.py",
+      "baseline_blob_sha256": "2cdf45e77bc3e13e20617ea58f6d915455c850866716acc1f7dee601ba243bb3",
+      "working_sha256": "2cdf45e77bc3e13e20617ea58f6d915455c850866716acc1f7dee601ba243bb3"
+    },
+    {
+      "path": "track2/detector/sparse_injection_model.py",
+      "baseline_blob_sha256": "a90f5b98fee44e1dd6d08eb1efe80154ab5b289f13751b11631b595a80ffd7f3",
+      "working_sha256": "a90f5b98fee44e1dd6d08eb1efe80154ab5b289f13751b11631b595a80ffd7f3"
+    },
+    {
+      "path": "track2/detector/task_policy.py",
+      "baseline_blob_sha256": "7781fc56044f8f494cf74c015df56e5ad298c9e181f2289508a7c7632156fb44",
+      "working_sha256": "7781fc56044f8f494cf74c015df56e5ad298c9e181f2289508a7c7632156fb44"
+    },
+    {
+      "path": "track2/detector/trusted_plan.py",
+      "baseline_blob_sha256": "2c3559be4f212bfe29772fcf949a422b1f21eebe2c8dfc610426c2935a4b31ae",
+      "working_sha256": "2c3559be4f212bfe29772fcf949a422b1f21eebe2c8dfc610426c2935a4b31ae"
+    }
+  ]
+}

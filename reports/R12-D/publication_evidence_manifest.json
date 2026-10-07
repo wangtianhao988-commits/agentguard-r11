@@ -1,0 +1,278 @@
+{
+  "baseline": "cbd911b30db075f3c80bbb2706730281629d695c",
+  "new_runtime_validation": false,
+  "original_evidence_preserved": true,
+  "copies": [
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_metrics.json",
+      "published": "reports/R12-D/r12d_metrics.json",
+      "original_sha256": "83fc1f2100f78d52c217901587d2ff8cf498ae818ddfbe96cf3262c2491c1287",
+      "published_sha256": "1d7f8503c5a3faa66644a0b91ccdb0e1b50e0405db3971181d78355010341170",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_full_metrics.md",
+      "published": "reports/R12-D/r12d_full_metrics.md",
+      "original_sha256": "9d8748fd950089de3ce7cecd64c05c137a648ff90824742586c1499cd7bb0b83",
+      "published_sha256": "1944244eb116c6fbabb37bc88891f962fd0defa83ddb06ac4ee36d1f543a71bc",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_failure_cases.md",
+      "published": "reports/R12-D/r12d_failure_cases.md",
+      "original_sha256": "999feb39d18fcfe225611c09b5f59bddf3da7c47c32268dcb01ca051eee2ac7b",
+      "published_sha256": "fd55046be8756d3899e1d46fad6f1ecb9cb9ee2af60e941964c14c1a1e96bc3f",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_final_report.md",
+      "published": "reports/R12-D/r12d_final_report.md",
+      "original_sha256": "4d902d76695e60cfd067b1748257b29d69259f6377a73b28e82e312ac838167c",
+      "published_sha256": "d346155ca876a9011012cb292643712cd3b3c797d83e1ac759b5e94a3a3f5127",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_final_decision.md",
+      "published": "reports/R12-D/r12d_final_decision.md",
+      "original_sha256": "31172856b1022334bcacceada7f41848609eda5511d8e4fbb2ee66880295136e",
+      "published_sha256": "96e8a7fda1d6aeef6937c8ae4c320c828b86420fa6dbf2b5e73e4770ed155f53",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_final_integrity.json",
+      "published": "reports/R12-D/r12d_final_integrity.json",
+      "original_sha256": "a6b2e71e8e5335882fbf4633593bbab9e27b3df96be67397d0af22f78c54c1ee",
+      "published_sha256": "7748043c55dff2837c60f432c4b8140163cd7e26e92e8188fb7e41adcefbd5aa",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_old_tp_retention.csv",
+      "published": "reports/R12-D/r12d_old_tp_retention.csv",
+      "original_sha256": "ff3f55b409278fc90777468ca1be91313d74420bf3160296c2e93bd76710030d",
+      "published_sha256": "368f55422ded5c3a145f756deeeeb3fe8d856aa3700ec90e10515c9e77580550",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_fn_recovery.csv",
+      "published": "reports/R12-D/r12d_fn_recovery.csv",
+      "original_sha256": "450f38d5d7bf48c6a8dea6cbcc0a206b04b0c7a2fd5583140d3157221c7d2c18",
+      "published_sha256": "85b0e2d65bd97cae70c2013d4144562a81baf16f3a65bd135c454373e352ef0e",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized",
+        "runtime_evidence column omitted to avoid bulk raw benchmark redistribution; all other fields and all 240 rows retained"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_normal_results.csv",
+      "published": "reports/R12-D/r12d_normal_results.csv",
+      "original_sha256": "591258abc26f4445c3de697fb971af1acbbe94bc27a274cf20df8ed6a46353e0",
+      "published_sha256": "b09ea27536423660b022a98a2e28846676588a30dca02201a956711d2ba815f0",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_code_diff.md",
+      "published": "reports/r12d_code_diff.md",
+      "original_sha256": "895fd07b31e44a268dc55bc22522fe0c04f39c6954613fe52e799ecbd68198f4",
+      "published_sha256": "959a8f792b992563a154805062cba90cb7289bd138e68f63bd3f1ed0cb9c61ad",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_implementation_design.md",
+      "published": "reports/r12d_implementation_design.md",
+      "original_sha256": "4eb97a7904be2134e2d7ac1ab49658caac150ab8610af05604e9f0320c4c0903",
+      "published_sha256": "c9a1ff0816f34f368105c83c4b8658043e8dbbda94711b82a9fe4286ed89bed9",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_live_smoke.json",
+      "published": "reports/r12d_live_smoke.json",
+      "original_sha256": "8190319692128ec9e300a681199f9d41c35f8e7f0b146efd065b262f1e206fd7",
+      "published_sha256": "530e53d01e729bf1278815d1938bcf11d71d2a12ec87308d59fae2de41f73b7d",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_original_preservation.json",
+      "published": "reports/r12d_original_preservation.json",
+      "original_sha256": "ab25b97bc5ae549269ab2fd83010558cf363190265008ffedcfdbf8b238ef12b",
+      "published_sha256": "3a00b4526cc01ef1741c89ce9158876ed3983487c5b39952e7f6d7658ae90553",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_overfit_audit.md",
+      "published": "reports/r12d_overfit_audit.md",
+      "original_sha256": "05708053578595996dd0855e6e5723d57cb4687a324155a37618033c9ca0c043",
+      "published_sha256": "63f2972fff3d620195d534dcd71dda940b1bea064be2b3a3f4389d5bdf8986b9",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D_minimal_boundary_20261007/reports/r12d_progress.json",
+      "published": "reports/r12d_progress.json",
+      "original_sha256": "7b62612e8f669d1dcb02530138a3f08b45b4c0e92ea04d53c01734e61f56374e",
+      "published_sha256": "4482d80facac6d22bc4a5cd06942480af22679af629ec4069c9234bd4b42b003",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D2_minimal_repair/reports/r12d2_final_report.md",
+      "published": "reports/experiments/R12-D2/r12d2_final_report.md",
+      "original_sha256": "e9e4ee103d84d32ff011a233a5bffd435395017ac5b46deb911bbeaa8d76a7fe",
+      "published_sha256": "b0646d13331cfbf7fec68cb292e760a3915d0405a24006f714660ea91885d2b4",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D2_minimal_repair/reports/r12d2_final_metrics.md",
+      "published": "reports/experiments/R12-D2/r12d2_final_metrics.md",
+      "original_sha256": "1b45bacc40be1c10a5d6cc5c252337ea53dcb0237fd5eaba2d6e7dd8ef2f21b2",
+      "published_sha256": "e1a1729be30ce69a3b27d01cabcdca037dce25be336620cb6a176245c12e7899",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D2_minimal_repair/reports/r12d2_regression_matrix.md",
+      "published": "reports/experiments/R12-D2/r12d2_regression_matrix.md",
+      "original_sha256": "c0dffd66609e240acf13b2dc3c68b347297f61680f96bcde428092b29275b31a",
+      "published_sha256": "0eaeaeb79c0776fdb866c1d137e6071fa76cc47414b367eba3a7ef17a47533b4",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12D2_minimal_repair/reports/r12d2_remaining_normal_fp.md",
+      "published": "reports/experiments/R12-D2/r12d2_remaining_normal_fp.md",
+      "original_sha256": "2971f51b888e9b4331612c9798e73fbeb88cdfda60933ffb326a644d5e3b2ea9",
+      "published_sha256": "80fb74ba79ccb624a0259ecc34fbfd441b542451b787257e2690e51635abc0d7",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12F0_feasibility_audit/reports/r12f0_proof_definition.md",
+      "published": "reports/audits/R12-F0/r12f0_proof_definition.md",
+      "original_sha256": "f371d9d718834a63d21f0e4ab45d2ecdb4058b6beaebe8e584c59cfc683750cb",
+      "published_sha256": "acb16f9fb2eeb07a54ceed3cd2a62813b0790afae8aaf6404e0f8398319b3793",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12F0_feasibility_audit/reports/r12f0_recovery_matrix.csv",
+      "published": "reports/audits/R12-F0/r12f0_recovery_matrix.csv",
+      "original_sha256": "a85b8122a89666780442750018ffed6ef17561d9e9a9b506ae473cfd3b020e2b",
+      "published_sha256": "e38101d8b7426567b82a3f0754a03e40d231df3826ef3d1c078ccc6b563cf6e8",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12F0_feasibility_audit/reports/r12f0_normal_recovery.csv",
+      "published": "reports/audits/R12-F0/r12f0_normal_recovery.csv",
+      "original_sha256": "7cf6e2bdba83ab905d9889a73c72495fd1fc97c52079073dd5e574f6145e5846",
+      "published_sha256": "7b75ee6ee794f9df70bcf077939477cb6f440dc76e038e8008696c3cad89cd39",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12F0_feasibility_audit/reports/r12f0_attack_collateral.csv",
+      "published": "reports/audits/R12-F0/r12f0_attack_collateral.csv",
+      "original_sha256": "9fbf7aff856d5f901080bfbfef67ab59432e053c96cd5f45bc37947c27d0836c",
+      "published_sha256": "a5bca3981776c7325470a127c1241b8d16cc956799f06352bda9e2e17009a654",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12F0_feasibility_audit/reports/r12f0_overfit_audit.md",
+      "published": "reports/audits/R12-F0/r12f0_overfit_audit.md",
+      "original_sha256": "59437eba0fd79c9f34f71a39c35b50d34176819c90bcd4106d19d95c2d99cc7e",
+      "published_sha256": "0fb73f75e023ef4862f53c9bd1ebc5b22903cc2a092a279e3321c9314ddb8480",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12F0_feasibility_audit/reports/r12f0_final_decision.md",
+      "published": "reports/audits/R12-F0/r12f0_final_decision.md",
+      "original_sha256": "91c203e16ea31d201d4243b1f7f47c8a1106e7d36e4765789f51483ab274de32",
+      "published_sha256": "9552cb476b7b53d4fcfcce7d64b1bb1b2bf9145023ee52c869f5ea25d3224625",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12F0_feasibility_audit/reports/r12f0_final_report.md",
+      "published": "reports/audits/R12-F0/r12f0_final_report.md",
+      "original_sha256": "972522547c9c2e0233b9c4cd97e739620186fc03cb0469e7c1151dfc20a94d16",
+      "published_sha256": "e240ca50a1e9d2ddff57539daf337e98663ade0cce7686fc2eb4ef14dcdd712b",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    },
+    {
+      "source": "AgentGuard_R12F0_feasibility_audit/reports/r12f0_integrity.json",
+      "published": "reports/audits/R12-F0/r12f0_integrity.json",
+      "original_sha256": "605cfe2b2aa983b506290e49c633906bad9f18e9f101e6bcb6037e421ac35358",
+      "published_sha256": "f9476486c8adfe3043c28226759c1b3cb20ef48108ff1380c2ae94af073b1838",
+      "publication_transformations": [
+        "local path presentation normalization where applicable",
+        "line endings normalized"
+      ]
+    }
+  ]
+}

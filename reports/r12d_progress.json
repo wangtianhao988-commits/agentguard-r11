@@ -1,11 +1,14 @@
 {
-  "state": "SMOKE_COMPLETE_READY_FOR_FORMAL_FREEZE",
-  "formal_run_started": false,
+  "state": "R12-D_NOT_PASS_COMPLETED_AND_STOPPED",
+  "formal_run_started": true,
   "original_python_files_verified": 469,
   "evaluator_sha256": "d21ad73b7f82a16fac967566437db8fcf85448fd64bab76d7359d77c1e02c3a7",
   "runtime_files": [
     "track2/detector/external_boundary.py",
     "track2/collector/inline_guard.py"
   ],
-  "docker_rebuild_authorized": true
+  "docker_rebuild_authorized": true,
+  "formal_run_completed": true,
+  "formal_run_count": 1,
+  "runtime_changes_after_freeze": false
 }
