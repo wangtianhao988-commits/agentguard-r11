@@ -1,0 +1,10 @@
+{
+  "result_interventions": 22,
+  "result_projections": 0,
+  "result_refusals": 22,
+  "graph_witnesses_verified": 45,
+  "semantic_refusals_verified": 0,
+  "result_policy_replay": "exact",
+  "certificate_replay": "exhaustive finite minimum cost",
+  "scope": "observed events; not proof of missing-event completeness or unknown future paths"
+}

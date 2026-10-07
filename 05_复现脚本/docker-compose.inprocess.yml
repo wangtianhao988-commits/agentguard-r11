@@ -1,0 +1,58 @@
+# In-process enforcement -- a MEASUREMENT overlay, loaded explicitly with `-f`.
+#
+#     docker compose -f docker-compose.yml -f docker-compose.override.yml \
+#                    -f docker-compose.inprocess.yml up -d mcp-customer-db
+#
+# It is NOT part of `docker-compose.override.yml`, and that separation is deliberate.
+# The default overlay's own header says a guard that needs the target's source edited is
+# neither general nor a validation-only overlay; the hook requires exactly that patch.
+# Every other number in this project was taken in gateway mode, and anything that reads
+# the evidence has to be able to assume one mode rather than two.
+#
+# Keeping it in a separate file means the mode is chosen at `up` rather than by editing
+# the default, so a replay cannot silently run in the wrong one -- which is what happened
+# when this block lived in the main overlay: `consistency.py` reported divergences that
+# were entirely the two modes writing to the same file.
+#
+# What it answers: how much of the guard's CPU is the HTTP hop? Nothing else. If the
+# saving turns out to be small, the honest conclusion is that the general design is
+# cheap and this overlay is unnecessary -- so the measurement has to be able to come out
+# either way.
+
+services:
+  mcp-customer-db:
+    # **A host port for the measurement, and it is part of the comparison rather than
+    # a convenience.** The range publishes no MCP ports, so the first attempt at the
+    # direct path pointed at `localhost:8100` -- which is the agent app, not the server.
+    # It answered quickly and reported `checked: 0` and 0.00% CPU: the load never reached
+    # the thing being measured. Both modes now have exactly one host-to-container hop,
+    # which is the only way the two figures describe the same journey.
+    ports:
+      - "8120:8000"
+    volumes:
+      - ../../../track2/detector:/opt/guard/detector:ro
+      - ./evidence:/opt/guard/evidence
+      - ./inventory:/opt/guard/inventory:ro
+    environment:
+      INLINE_GUARD: "1"
+      INLINE_GUARD_RECORDS: /opt/guard/evidence
+      INVENTORY_PATH: /opt/guard/inventory/inventory.json
+      # The caller's declared scope. In the gateway this arrives on the JWT that
+      # observation point A decodes; in-process there is no HTTP hop to carry it, so it
+      # is configuration. **Without it the scope rule declines to guess and nothing is
+      # detected** -- the hook reported `checked: 2, alerted: 0` on calls the gateway
+      # flags, which is a deployment quietly losing its main rule rather than a detector
+      # that does not work.
+      INLINE_GUARD_IDENTITY: '{"sub":"lwang","role":"ops-support","scope":{"tenant":"acme"}}'
+    # **`environment:` alone does NOT work here, and that is why this comment exists.**
+    #
+    # The image's CMD is `sh -c "PYTHONPATH=/app:/app/mcp_pkgs uvicorn ${SERVER}:app ..."`.
+    # That shell assignment runs at start and OVERWRITES whatever PYTHONPATH the container
+    # was given, so a `PYTHONPATH` in `environment:` is visible in `docker exec env` and
+    # absent in the process that matters. The hook reported `No module named 'rules'`
+    # while `env` showed the right value -- two true statements that do not agree, which
+    # is this project's recurring failure shape.
+    command:
+      - sh
+      - -c
+      - "PYTHONPATH=/opt/guard/detector:/app:/app/mcp_pkgs uvicorn $${SERVER}:app --host 0.0.0.0 --port 8000"

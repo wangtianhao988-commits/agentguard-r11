@@ -1,0 +1,1541 @@
+{
+  "status": "completed",
+  "method": "same-PID; full fixed official workload; conservative native idle cost added",
+  "pairs": [
+    {
+      "pair": 1,
+      "order": [
+        "baseline",
+        "guard"
+      ],
+      "baseline": {
+        "status": "completed",
+        "period": "pair1_baseline",
+        "mode": "baseline",
+        "driver": {
+          "events": 5200,
+          "offered_events_per_second": 40,
+          "authenticated_setup_s": 0.0604497000167612,
+          "late_events": 62,
+          "driver_wall_s": 129.98490960002528
+        },
+        "wall_s": 131.86899250000715,
+        "cpu_seconds": {
+          "agentrange-opspilot-app-1": 27.432689,
+          "agentrange-guard-gateway": 0.24111399999999994,
+          "agentrange-guard-stackd": 0.122693,
+          "agentrange-r11-verifier": 0.16078399999997828
+        },
+        "cpu_split_seconds": {
+          "agentrange-opspilot-app-1": {
+            "user_usec": 23.28783,
+            "system_usec": 4.14486
+          },
+          "agentrange-guard-gateway": {
+            "user_usec": 0.201242,
+            "system_usec": 0.039873
+          },
+          "agentrange-guard-stackd": {
+            "user_usec": 0.097768,
+            "system_usec": 0.024926
+          },
+          "agentrange-r11-verifier": {
+            "user_usec": 0.106937,
+            "system_usec": 0.053846
+          }
+        },
+        "absolute_single_core_cpu_percent": {
+          "agentrange-opspilot-app-1": 20.80298672183949,
+          "agentrange-guard-gateway": 0.18284359001225162,
+          "agentrange-guard-stackd": 0.09304158443463753,
+          "agentrange-r11-verifier": 0.12192707091469555
+        },
+        "health": [
+          {
+            "benchmark_only": true,
+            "role": "native",
+            "period": "pair1_baseline",
+            "mode": "baseline",
+            "pid": 1,
+            "guard": {
+              "checked": 0,
+              "blocked": 0,
+              "alerted": 0,
+              "allowed": 0,
+              "errors": 0,
+              "total_us": 0,
+              "mean_us": 0.0,
+              "enforcement": false,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 0,
+                "findings": 0,
+                "source_values": 0,
+                "observation_errors": 0,
+                "joint_checked": 0,
+                "joint_findings": 0,
+                "planner_runs": 0,
+                "persist_writes": 0,
+                "isolated": 0,
+                "result_denied": 0,
+                "sources": 0,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 0,
+                  "cache_hits": 0,
+                  "cpu_ns": 0,
+                  "wall_ns": 0,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 0,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": {
+                  "queries": 0,
+                  "cache_hits": 0,
+                  "errors": 0,
+                  "wall_ns": 0,
+                  "model_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b"
+                }
+              }
+            },
+            "records_dropped": {}
+          },
+          {
+            "benchmark_only": true,
+            "role": "framework",
+            "period": "pair1_baseline",
+            "mode": "baseline",
+            "pid": 1,
+            "guard": {
+              "checked": 0,
+              "blocked": 0,
+              "alerted": 0,
+              "allowed": 0,
+              "errors": 0,
+              "total_us": 0,
+              "mean_us": 0.0,
+              "enforcement": false,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 0,
+                "findings": 0,
+                "source_values": 0,
+                "observation_errors": 0,
+                "joint_checked": 0,
+                "joint_findings": 0,
+                "planner_runs": 0,
+                "persist_writes": 0,
+                "isolated": 0,
+                "result_denied": 0,
+                "sources": 0,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 0,
+                  "cache_hits": 0,
+                  "cpu_ns": 0,
+                  "wall_ns": 0,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 0,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": null
+              }
+            },
+            "records_dropped": {}
+          }
+        ]
+      },
+      "guard": {
+        "status": "completed",
+        "period": "pair1_guard",
+        "mode": "guard",
+        "driver": {
+          "events": 5200,
+          "offered_events_per_second": 40,
+          "authenticated_setup_s": 0.07312519999686629,
+          "late_events": 69,
+          "driver_wall_s": 129.99125160000403
+        },
+        "wall_s": 131.8912793000054,
+        "cpu_seconds": {
+          "agentrange-opspilot-app-1": 32.928853000000004,
+          "agentrange-guard-gateway": 0.21931899999999982,
+          "agentrange-guard-stackd": 0.12280500000000005,
+          "agentrange-r11-verifier": 0.18130800000000136
+        },
+        "cpu_split_seconds": {
+          "agentrange-opspilot-app-1": {
+            "user_usec": 28.255094,
+            "system_usec": 4.673759
+          },
+          "agentrange-guard-gateway": {
+            "user_usec": 0.183974,
+            "system_usec": 0.035345
+          },
+          "agentrange-guard-stackd": {
+            "user_usec": 0.106452,
+            "system_usec": 0.016354
+          },
+          "agentrange-r11-verifier": {
+            "user_usec": 0.130213,
+            "system_usec": 0.051096
+          }
+        },
+        "absolute_single_core_cpu_percent": {
+          "agentrange-opspilot-app-1": 24.96666434260499,
+          "agentrange-guard-gateway": 0.1662877190698315,
+          "agentrange-guard-stackd": 0.09311078082779277,
+          "agentrange-r11-verifier": 0.13746776963743798
+        },
+        "health": [
+          {
+            "benchmark_only": true,
+            "role": "native",
+            "period": "pair1_guard",
+            "mode": "guard",
+            "pid": 1,
+            "guard": {
+              "checked": 6521,
+              "blocked": 56,
+              "alerted": 11,
+              "allowed": 6454,
+              "errors": 0,
+              "total_us": 891878.6,
+              "mean_us": 136.8,
+              "enforcement": true,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 6521,
+                "findings": 11,
+                "source_values": 1,
+                "observation_errors": 0,
+                "joint_checked": 6521,
+                "joint_findings": 22,
+                "planner_runs": 45,
+                "persist_writes": 1,
+                "isolated": 0,
+                "result_denied": 22,
+                "sources": 1,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 2387,
+                  "cache_hits": 25106,
+                  "cpu_ns": 72154883,
+                  "wall_ns": 75150301,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 6443,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": {
+                  "queries": 0,
+                  "cache_hits": 0,
+                  "errors": 0,
+                  "wall_ns": 0,
+                  "source_discharged": 1256,
+                  "model_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b"
+                }
+              }
+            },
+            "records_dropped": {}
+          },
+          {
+            "benchmark_only": true,
+            "role": "framework",
+            "period": "pair1_guard",
+            "mode": "guard",
+            "pid": 1,
+            "guard": {
+              "checked": 25,
+              "blocked": 24,
+              "alerted": 0,
+              "allowed": 1,
+              "errors": 0,
+              "total_us": 1142.8,
+              "mean_us": 45.7,
+              "enforcement": true,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 0,
+                "findings": 0,
+                "source_values": 0,
+                "observation_errors": 0,
+                "joint_checked": 0,
+                "joint_findings": 0,
+                "planner_runs": 0,
+                "persist_writes": 0,
+                "isolated": 0,
+                "result_denied": 0,
+                "sources": 0,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 0,
+                  "cache_hits": 0,
+                  "cpu_ns": 0,
+                  "wall_ns": 0,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 0,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": null
+              }
+            },
+            "records_dropped": {}
+          }
+        ],
+        "runtime_source_sha256": {
+          "track2/collector/auth_diagnostic.py": "6aea6f04f3ba941c23a0086ef5394cd939ca54cf939573bd4ee4e2522054e672",
+          "track2/collector/auth_diagnostic_entry.py": "637ba8967d3f1af90e7ee07bd085c7145169c5fff8c6d8cfcaa46df727e81c01",
+          "track2/collector/control_endpoint.py": "b85179c72f78918054fc134afafac70d742737b409c8e01bbead9eef4cc09a8e",
+          "track2/collector/gateway.py": "67b52abe672c05d4a452593fcf191477057956f8a100b13a87e078ba66142d60",
+          "track2/collector/inline_guard.py": "863eee38343c76bdd75e8d043c85d8c609fd93d27efcb20eb1f47d3e50b9969f",
+          "track2/collector/inprocess.py": "6d563adda1e1e5d907b1356d24075744404f78a68b2217e49d431cf82aeb3dc7",
+          "track2/collector/json_codec.py": "dcf16df16f76533d0ba1dc3c206bb5f249b1e96020e9c068507a9b84ca3a132b",
+          "track2/collector/model_proposer.py": "b7ef2ba6b61707b90f1fbc99bc9b7e6a393f9cbdfc94357a83fa173bbd3f68ed",
+          "track2/collector/native_stack.py": "804b25d1847e22bfc89e22afbe22c3bc12cb21e296e95e771779eea99a5aae1b",
+          "track2/collector/pooled_transport.py": "61b0539817b1764a4b632fdd84b3ec4cd937e5b0623dad631a93080199289243",
+          "track2/collector/stackd.py": "68d06c80a300c87af2af93661830f0b71fbf2a4ab3aae876eb32fb5f122fce00",
+          "track2/collector/upstream.py": "941d4712fc558edd0ab3050a68fd013c742033257bcb718c9959a1d96b765767",
+          "track2/detector/action_intent.py": "0f1148a70d919731369e34ae04718e14323f557c3d4f3500b112fb811cc974a7",
+          "track2/detector/business_flow.py": "0fa689f4ebdb50d90315e40398bf88aec213ad998c938d0bc1c95d46030b3e16",
+          "track2/detector/contextual_intent.py": "639c21af0518186d0d5b8b38db488b1ef147a4902d2500fbe8ee072c7a7333aa",
+          "track2/detector/controlled_executor.py": "2625809f63683139a490872373d03d8e107e9490cb091c9961d80f17b0a195f4",
+          "track2/detector/document_classifier.py": "7abac2cdb579de9d9851e9959d8f54be98a56e991fa1811bfe88c9751397ff43",
+          "track2/detector/execution_contract.py": "84b760c477b16ea994492698a18732a77c2c6414d777107b5958aaa052b97b10",
+          "track2/detector/generalization.py": "a146cc82604fb37f0d750aa6a0002cdae53abaa8042540df8cf0c34546d1ae0b",
+          "track2/detector/injection_classifier.py": "88aeacecd9f46f06f392657a34f4cf0109604e6cbe007f6081854c38bfa31724",
+          "track2/detector/intervention.py": "02c1cf4cec8d10fbd0ddcbb2ba263309ea3a0576f00c4a8fed21bbcf3b0e65ac",
+          "track2/detector/knowledge_graph.py": "d3f91afa0b957d78aa18541821888495361089884b194d12052cc17e77fbacf2",
+          "track2/detector/model_controlled_executor.py": "e90811a13a342dd5614400fabd7accdc45751a2965a3299b3983fa516e0dec65",
+          "track2/detector/rules.py": "94fce1793da536037c2f2c520c5db8d4ce7637f91925528aeb761ffcf9b77703",
+          "track2/detector/runtime_r10.py": "09ddd2ce37d5c451912e904e49e569b7f0c73a014a8f5ac5dcdd65b781db65e6",
+          "track2/detector/security_graph.py": "08761458b3a705423d769efe7af447821628624a1bd0eae063751ebe74ee8f9e",
+          "track2/detector/semantic_model.py": "a68faed35c12ad7474e170e663f14293df79b72dee28f60977efec5496e69db7",
+          "track2/detector/session.py": "f21d6e8259ed670e86291093525683a8e5dc9d41fbe7ea5c8fe7585dbab6ee5c",
+          "track2/detector/source_contract.py": "2cdf45e77bc3e13e20617ea58f6d915455c850866716acc1f7dee601ba243bb3",
+          "track2/detector/sparse_injection_model.py": "a90f5b98fee44e1dd6d08eb1efe80154ab5b289f13751b11631b595a80ffd7f3",
+          "track2/detector/task_policy.py": "7781fc56044f8f494cf74c015df56e5ad298c9e181f2289508a7c7632156fb44",
+          "track2/detector/trusted_plan.py": "e8b16dfb3836cab35ce775335b2144fef1b6813af0692c402f601cb024be0184",
+          "track2/bench/aggregate_profile.py": "0c76efa7f0d81e9772965e7948a2def4228937e0c2451eab18f39b9553505269",
+          "track2/bench/attack_path_latency.py": "ebbbb6658726278b5ea41e5f1e4b6f9d4b8032dc35a4979c3e15ae10b349fc06",
+          "track2/bench/bench_ab.py": "699c222cf9a7d6d914dda9f53276bb32f55ae3d25c6843b467cc39897fb91acd",
+          "track2/bench/concurrency.py": "ba70e1a95c28427381dc1e9d98584fed512ea0d64a682ccfc1f7e0bf3cda829b",
+          "track2/bench/cpu_attribution.py": "4d4f187a55baeca30c95fc5678803756a3f8a00ecc015707d0faf71f9b9ac8f8",
+          "track2/bench/cpu_detail.py": "88a1dff25ee7329a57f754bc06b347df306cb0e3c8b243e5b83d65d7e48fea35",
+          "track2/bench/m5_inprocess.py": "ba1be2093d79e7bad85e5d86a0df70388a1cb59d76b9c42ad9b2867186d1ad16",
+          "track2/bench/perf.py": "41e5228b4b6adf73ff2a90bfe4866026312ac1b16eeafd3579ceba723c412f17",
+          "track2/bench/profile_workload.py": "8c1c644d2b579e9bb4c5ea1d915dabb712e96606ab695cc9fe41db96727fc4bf"
+        },
+        "driver_source_sha256": {
+          "_scratch/competition/agentrange/scenario-runner/runner.py": "6bfadc90ed04935fa32c0816022cae9e3b0fa97c3f1c2a0689aa255833da6a7f",
+          "_scratch/competition/agentrange/scenario-runner/token_readiness.py": "d295d93f6c72dcf3ef8be111caac8f6ecdcbd8134f8a5c6b0b7690685b4237bb",
+          "05_\u590d\u73b0\u811a\u672c/qualify_same_pid.py": "a158d43de72eb054a6460253ada6d0dbded991be3894f0d1a5be5827d802cd76",
+          "05_\u590d\u73b0\u811a\u672c/deploy_r3.py": "efea4b8cc40bc741569a7f071ae2289eb46caaca3b9e4697f9c5c6674d172120",
+          "05_\u590d\u73b0\u811a\u672c/qualify_inprocess.py": "154b09387166b4e5576b9e8c110a114d297ac8e70c81bd96b725a7630facf3a8",
+          "05_\u590d\u73b0\u811a\u672c/result_policy.official.json": "266cd716438c8aa14889f45f4619e0839ddfff328ba86be2cc811eddf186af5e"
+        }
+      },
+      "incremental_single_core_cpu_percent": 5.021633492132453
+    },
+    {
+      "pair": 2,
+      "order": [
+        "guard",
+        "baseline"
+      ],
+      "baseline": {
+        "status": "completed",
+        "period": "pair2_baseline",
+        "mode": "baseline",
+        "driver": {
+          "events": 5200,
+          "offered_events_per_second": 40,
+          "authenticated_setup_s": 0.05061209999257699,
+          "late_events": 29,
+          "driver_wall_s": 129.9860059999919
+        },
+        "wall_s": 131.9085128000006,
+        "cpu_seconds": {
+          "agentrange-opspilot-app-1": 27.568397000000004,
+          "agentrange-guard-gateway": 0.2357229999999999,
+          "agentrange-guard-stackd": 0.12533899999999998,
+          "agentrange-r11-verifier": 0.1827809999999772
+        },
+        "cpu_split_seconds": {
+          "agentrange-opspilot-app-1": {
+            "user_usec": 23.284216,
+            "system_usec": 4.284181
+          },
+          "agentrange-guard-gateway": {
+            "user_usec": 0.197726,
+            "system_usec": 0.037996
+          },
+          "agentrange-guard-stackd": {
+            "user_usec": 0.11059,
+            "system_usec": 0.01475
+          },
+          "agentrange-r11-verifier": {
+            "user_usec": 0.120425,
+            "system_usec": 0.062356
+          }
+        },
+        "absolute_single_core_cpu_percent": {
+          "agentrange-opspilot-app-1": 20.899634462408915,
+          "agentrange-guard-gateway": 0.17870188587252334,
+          "agentrange-guard-stackd": 0.09501964455473673,
+          "agentrange-r11-verifier": 0.13856649288216094
+        },
+        "health": [
+          {
+            "benchmark_only": true,
+            "role": "native",
+            "period": "pair2_baseline",
+            "mode": "baseline",
+            "pid": 1,
+            "guard": {
+              "checked": 0,
+              "blocked": 0,
+              "alerted": 0,
+              "allowed": 0,
+              "errors": 0,
+              "total_us": 0,
+              "mean_us": 0.0,
+              "enforcement": false,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 0,
+                "findings": 0,
+                "source_values": 0,
+                "observation_errors": 0,
+                "joint_checked": 0,
+                "joint_findings": 0,
+                "planner_runs": 0,
+                "persist_writes": 0,
+                "isolated": 0,
+                "result_denied": 0,
+                "sources": 0,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 0,
+                  "cache_hits": 0,
+                  "cpu_ns": 0,
+                  "wall_ns": 0,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 0,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": {
+                  "queries": 0,
+                  "cache_hits": 0,
+                  "errors": 0,
+                  "wall_ns": 0,
+                  "model_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b"
+                }
+              }
+            },
+            "records_dropped": {}
+          },
+          {
+            "benchmark_only": true,
+            "role": "framework",
+            "period": "pair2_baseline",
+            "mode": "baseline",
+            "pid": 1,
+            "guard": {
+              "checked": 0,
+              "blocked": 0,
+              "alerted": 0,
+              "allowed": 0,
+              "errors": 0,
+              "total_us": 0,
+              "mean_us": 0.0,
+              "enforcement": false,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 0,
+                "findings": 0,
+                "source_values": 0,
+                "observation_errors": 0,
+                "joint_checked": 0,
+                "joint_findings": 0,
+                "planner_runs": 0,
+                "persist_writes": 0,
+                "isolated": 0,
+                "result_denied": 0,
+                "sources": 0,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 0,
+                  "cache_hits": 0,
+                  "cpu_ns": 0,
+                  "wall_ns": 0,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 0,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": null
+              }
+            },
+            "records_dropped": {}
+          }
+        ]
+      },
+      "guard": {
+        "status": "completed",
+        "period": "pair2_guard",
+        "mode": "guard",
+        "driver": {
+          "events": 5200,
+          "offered_events_per_second": 40,
+          "authenticated_setup_s": 0.04844089999096468,
+          "late_events": 36,
+          "driver_wall_s": 129.9923523000034
+        },
+        "wall_s": 131.97052420000546,
+        "cpu_seconds": {
+          "agentrange-opspilot-app-1": 32.746675,
+          "agentrange-guard-gateway": 0.216464,
+          "agentrange-guard-stackd": 0.12666500000000003,
+          "agentrange-r11-verifier": 0.17911599999996497
+        },
+        "cpu_split_seconds": {
+          "agentrange-opspilot-app-1": {
+            "user_usec": 28.374239,
+            "system_usec": 4.372435
+          },
+          "agentrange-guard-gateway": {
+            "user_usec": 0.191284,
+            "system_usec": 0.02518
+          },
+          "agentrange-guard-stackd": {
+            "user_usec": 0.10277,
+            "system_usec": 0.023894
+          },
+          "agentrange-r11-verifier": {
+            "user_usec": 0.123594,
+            "system_usec": 0.055522
+          }
+        },
+        "absolute_single_core_cpu_percent": {
+          "agentrange-opspilot-app-1": 24.813628041949272,
+          "agentrange-guard-gateway": 0.1640245057085187,
+          "agentrange-guard-stackd": 0.09597976576044759,
+          "agentrange-r11-verifier": 0.1357242468238658
+        },
+        "health": [
+          {
+            "benchmark_only": true,
+            "role": "native",
+            "period": "pair2_guard",
+            "mode": "guard",
+            "pid": 1,
+            "guard": {
+              "checked": 6521,
+              "blocked": 56,
+              "alerted": 11,
+              "allowed": 6454,
+              "errors": 0,
+              "total_us": 877482.7,
+              "mean_us": 134.6,
+              "enforcement": true,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 6521,
+                "findings": 11,
+                "source_values": 1,
+                "observation_errors": 0,
+                "joint_checked": 6521,
+                "joint_findings": 22,
+                "planner_runs": 45,
+                "persist_writes": 1,
+                "isolated": 0,
+                "result_denied": 22,
+                "sources": 1,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 2387,
+                  "cache_hits": 25106,
+                  "cpu_ns": 70726619,
+                  "wall_ns": 73838324,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 6443,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": {
+                  "queries": 0,
+                  "cache_hits": 0,
+                  "errors": 0,
+                  "wall_ns": 0,
+                  "source_discharged": 1256,
+                  "model_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b"
+                }
+              }
+            },
+            "records_dropped": {}
+          },
+          {
+            "benchmark_only": true,
+            "role": "framework",
+            "period": "pair2_guard",
+            "mode": "guard",
+            "pid": 1,
+            "guard": {
+              "checked": 25,
+              "blocked": 24,
+              "alerted": 0,
+              "allowed": 1,
+              "errors": 0,
+              "total_us": 1115.7,
+              "mean_us": 44.6,
+              "enforcement": true,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 0,
+                "findings": 0,
+                "source_values": 0,
+                "observation_errors": 0,
+                "joint_checked": 0,
+                "joint_findings": 0,
+                "planner_runs": 0,
+                "persist_writes": 0,
+                "isolated": 0,
+                "result_denied": 0,
+                "sources": 0,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 0,
+                  "cache_hits": 0,
+                  "cpu_ns": 0,
+                  "wall_ns": 0,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 0,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": null
+              }
+            },
+            "records_dropped": {}
+          }
+        ],
+        "runtime_source_sha256": {
+          "track2/collector/auth_diagnostic.py": "6aea6f04f3ba941c23a0086ef5394cd939ca54cf939573bd4ee4e2522054e672",
+          "track2/collector/auth_diagnostic_entry.py": "637ba8967d3f1af90e7ee07bd085c7145169c5fff8c6d8cfcaa46df727e81c01",
+          "track2/collector/control_endpoint.py": "b85179c72f78918054fc134afafac70d742737b409c8e01bbead9eef4cc09a8e",
+          "track2/collector/gateway.py": "67b52abe672c05d4a452593fcf191477057956f8a100b13a87e078ba66142d60",
+          "track2/collector/inline_guard.py": "863eee38343c76bdd75e8d043c85d8c609fd93d27efcb20eb1f47d3e50b9969f",
+          "track2/collector/inprocess.py": "6d563adda1e1e5d907b1356d24075744404f78a68b2217e49d431cf82aeb3dc7",
+          "track2/collector/json_codec.py": "dcf16df16f76533d0ba1dc3c206bb5f249b1e96020e9c068507a9b84ca3a132b",
+          "track2/collector/model_proposer.py": "b7ef2ba6b61707b90f1fbc99bc9b7e6a393f9cbdfc94357a83fa173bbd3f68ed",
+          "track2/collector/native_stack.py": "804b25d1847e22bfc89e22afbe22c3bc12cb21e296e95e771779eea99a5aae1b",
+          "track2/collector/pooled_transport.py": "61b0539817b1764a4b632fdd84b3ec4cd937e5b0623dad631a93080199289243",
+          "track2/collector/stackd.py": "68d06c80a300c87af2af93661830f0b71fbf2a4ab3aae876eb32fb5f122fce00",
+          "track2/collector/upstream.py": "941d4712fc558edd0ab3050a68fd013c742033257bcb718c9959a1d96b765767",
+          "track2/detector/action_intent.py": "0f1148a70d919731369e34ae04718e14323f557c3d4f3500b112fb811cc974a7",
+          "track2/detector/business_flow.py": "0fa689f4ebdb50d90315e40398bf88aec213ad998c938d0bc1c95d46030b3e16",
+          "track2/detector/contextual_intent.py": "639c21af0518186d0d5b8b38db488b1ef147a4902d2500fbe8ee072c7a7333aa",
+          "track2/detector/controlled_executor.py": "2625809f63683139a490872373d03d8e107e9490cb091c9961d80f17b0a195f4",
+          "track2/detector/document_classifier.py": "7abac2cdb579de9d9851e9959d8f54be98a56e991fa1811bfe88c9751397ff43",
+          "track2/detector/execution_contract.py": "84b760c477b16ea994492698a18732a77c2c6414d777107b5958aaa052b97b10",
+          "track2/detector/generalization.py": "a146cc82604fb37f0d750aa6a0002cdae53abaa8042540df8cf0c34546d1ae0b",
+          "track2/detector/injection_classifier.py": "88aeacecd9f46f06f392657a34f4cf0109604e6cbe007f6081854c38bfa31724",
+          "track2/detector/intervention.py": "02c1cf4cec8d10fbd0ddcbb2ba263309ea3a0576f00c4a8fed21bbcf3b0e65ac",
+          "track2/detector/knowledge_graph.py": "d3f91afa0b957d78aa18541821888495361089884b194d12052cc17e77fbacf2",
+          "track2/detector/model_controlled_executor.py": "e90811a13a342dd5614400fabd7accdc45751a2965a3299b3983fa516e0dec65",
+          "track2/detector/rules.py": "94fce1793da536037c2f2c520c5db8d4ce7637f91925528aeb761ffcf9b77703",
+          "track2/detector/runtime_r10.py": "09ddd2ce37d5c451912e904e49e569b7f0c73a014a8f5ac5dcdd65b781db65e6",
+          "track2/detector/security_graph.py": "08761458b3a705423d769efe7af447821628624a1bd0eae063751ebe74ee8f9e",
+          "track2/detector/semantic_model.py": "a68faed35c12ad7474e170e663f14293df79b72dee28f60977efec5496e69db7",
+          "track2/detector/session.py": "f21d6e8259ed670e86291093525683a8e5dc9d41fbe7ea5c8fe7585dbab6ee5c",
+          "track2/detector/source_contract.py": "2cdf45e77bc3e13e20617ea58f6d915455c850866716acc1f7dee601ba243bb3",
+          "track2/detector/sparse_injection_model.py": "a90f5b98fee44e1dd6d08eb1efe80154ab5b289f13751b11631b595a80ffd7f3",
+          "track2/detector/task_policy.py": "7781fc56044f8f494cf74c015df56e5ad298c9e181f2289508a7c7632156fb44",
+          "track2/detector/trusted_plan.py": "e8b16dfb3836cab35ce775335b2144fef1b6813af0692c402f601cb024be0184",
+          "track2/bench/aggregate_profile.py": "0c76efa7f0d81e9772965e7948a2def4228937e0c2451eab18f39b9553505269",
+          "track2/bench/attack_path_latency.py": "ebbbb6658726278b5ea41e5f1e4b6f9d4b8032dc35a4979c3e15ae10b349fc06",
+          "track2/bench/bench_ab.py": "699c222cf9a7d6d914dda9f53276bb32f55ae3d25c6843b467cc39897fb91acd",
+          "track2/bench/concurrency.py": "ba70e1a95c28427381dc1e9d98584fed512ea0d64a682ccfc1f7e0bf3cda829b",
+          "track2/bench/cpu_attribution.py": "4d4f187a55baeca30c95fc5678803756a3f8a00ecc015707d0faf71f9b9ac8f8",
+          "track2/bench/cpu_detail.py": "88a1dff25ee7329a57f754bc06b347df306cb0e3c8b243e5b83d65d7e48fea35",
+          "track2/bench/m5_inprocess.py": "ba1be2093d79e7bad85e5d86a0df70388a1cb59d76b9c42ad9b2867186d1ad16",
+          "track2/bench/perf.py": "41e5228b4b6adf73ff2a90bfe4866026312ac1b16eeafd3579ceba723c412f17",
+          "track2/bench/profile_workload.py": "8c1c644d2b579e9bb4c5ea1d915dabb712e96606ab695cc9fe41db96727fc4bf"
+        },
+        "driver_source_sha256": {
+          "_scratch/competition/agentrange/scenario-runner/runner.py": "6bfadc90ed04935fa32c0816022cae9e3b0fa97c3f1c2a0689aa255833da6a7f",
+          "_scratch/competition/agentrange/scenario-runner/token_readiness.py": "d295d93f6c72dcf3ef8be111caac8f6ecdcbd8134f8a5c6b0b7690685b4237bb",
+          "05_\u590d\u73b0\u811a\u672c/qualify_same_pid.py": "a158d43de72eb054a6460253ada6d0dbded991be3894f0d1a5be5827d802cd76",
+          "05_\u590d\u73b0\u811a\u672c/deploy_r3.py": "efea4b8cc40bc741569a7f071ae2289eb46caaca3b9e4697f9c5c6674d172120",
+          "05_\u590d\u73b0\u811a\u672c/qualify_inprocess.py": "154b09387166b4e5576b9e8c110a114d297ac8e70c81bd96b725a7630facf3a8",
+          "05_\u590d\u73b0\u811a\u672c/result_policy.official.json": "266cd716438c8aa14889f45f4619e0839ddfff328ba86be2cc811eddf186af5e"
+        }
+      },
+      "incremental_single_core_cpu_percent": 4.770811699665078
+    },
+    {
+      "pair": 3,
+      "order": [
+        "baseline",
+        "guard"
+      ],
+      "baseline": {
+        "status": "completed",
+        "period": "pair3_baseline",
+        "mode": "baseline",
+        "driver": {
+          "events": 5200,
+          "offered_events_per_second": 40,
+          "authenticated_setup_s": 0.0653329000051599,
+          "late_events": 25,
+          "driver_wall_s": 129.98870690001058
+        },
+        "wall_s": 131.87303569997312,
+        "cpu_seconds": {
+          "agentrange-opspilot-app-1": 27.551323999999994,
+          "agentrange-guard-gateway": 0.23480099999999982,
+          "agentrange-guard-stackd": 0.12496900000000011,
+          "agentrange-r11-verifier": 0.15814399999999296
+        },
+        "cpu_split_seconds": {
+          "agentrange-opspilot-app-1": {
+            "user_usec": 23.154677,
+            "system_usec": 4.396646
+          },
+          "agentrange-guard-gateway": {
+            "user_usec": 0.186029,
+            "system_usec": 0.048772
+          },
+          "agentrange-guard-stackd": {
+            "user_usec": 0.102325,
+            "system_usec": 0.022643
+          },
+          "agentrange-r11-verifier": {
+            "user_usec": 0.093199,
+            "system_usec": 0.064945
+          }
+        },
+        "absolute_single_core_cpu_percent": {
+          "agentrange-opspilot-app-1": 20.892310436139912,
+          "agentrange-guard-gateway": 0.17805080375506036,
+          "agentrange-guard-stackd": 0.09476463428378147,
+          "agentrange-r11-verifier": 0.11992140710235064
+        },
+        "health": [
+          {
+            "benchmark_only": true,
+            "role": "native",
+            "period": "pair3_baseline",
+            "mode": "baseline",
+            "pid": 1,
+            "guard": {
+              "checked": 0,
+              "blocked": 0,
+              "alerted": 0,
+              "allowed": 0,
+              "errors": 0,
+              "total_us": 0,
+              "mean_us": 0.0,
+              "enforcement": false,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 0,
+                "findings": 0,
+                "source_values": 0,
+                "observation_errors": 0,
+                "joint_checked": 0,
+                "joint_findings": 0,
+                "planner_runs": 0,
+                "persist_writes": 0,
+                "isolated": 0,
+                "result_denied": 0,
+                "sources": 0,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 0,
+                  "cache_hits": 0,
+                  "cpu_ns": 0,
+                  "wall_ns": 0,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 0,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": {
+                  "queries": 0,
+                  "cache_hits": 0,
+                  "errors": 0,
+                  "wall_ns": 0,
+                  "model_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b"
+                }
+              }
+            },
+            "records_dropped": {}
+          },
+          {
+            "benchmark_only": true,
+            "role": "framework",
+            "period": "pair3_baseline",
+            "mode": "baseline",
+            "pid": 1,
+            "guard": {
+              "checked": 0,
+              "blocked": 0,
+              "alerted": 0,
+              "allowed": 0,
+              "errors": 0,
+              "total_us": 0,
+              "mean_us": 0.0,
+              "enforcement": false,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 0,
+                "findings": 0,
+                "source_values": 0,
+                "observation_errors": 0,
+                "joint_checked": 0,
+                "joint_findings": 0,
+                "planner_runs": 0,
+                "persist_writes": 0,
+                "isolated": 0,
+                "result_denied": 0,
+                "sources": 0,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 0,
+                  "cache_hits": 0,
+                  "cpu_ns": 0,
+                  "wall_ns": 0,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 0,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": null
+              }
+            },
+            "records_dropped": {}
+          }
+        ]
+      },
+      "guard": {
+        "status": "completed",
+        "period": "pair3_guard",
+        "mode": "guard",
+        "driver": {
+          "events": 5200,
+          "offered_events_per_second": 40,
+          "authenticated_setup_s": 0.08040440001059324,
+          "late_events": 69,
+          "driver_wall_s": 130.0105721
+        },
+        "wall_s": 131.90384650000487,
+        "cpu_seconds": {
+          "agentrange-opspilot-app-1": 32.48105899999999,
+          "agentrange-guard-gateway": 0.21926599999999974,
+          "agentrange-guard-stackd": 0.1256330000000001,
+          "agentrange-r11-verifier": 0.15997199999998202
+        },
+        "cpu_split_seconds": {
+          "agentrange-opspilot-app-1": {
+            "user_usec": 28.29886,
+            "system_usec": 4.1822
+          },
+          "agentrange-guard-gateway": {
+            "user_usec": 0.17887,
+            "system_usec": 0.040396
+          },
+          "agentrange-guard-stackd": {
+            "user_usec": 0.093396,
+            "system_usec": 0.032237
+          },
+          "agentrange-r11-verifier": {
+            "user_usec": 0.106252,
+            "system_usec": 0.053721
+          }
+        },
+        "absolute_single_core_cpu_percent": {
+          "agentrange-opspilot-app-1": 24.624800460234333,
+          "agentrange-guard-gateway": 0.1662316951462,
+          "agentrange-guard-stackd": 0.09524589565323667,
+          "agentrange-r11-verifier": 0.12127925321721085
+        },
+        "health": [
+          {
+            "benchmark_only": true,
+            "role": "native",
+            "period": "pair3_guard",
+            "mode": "guard",
+            "pid": 1,
+            "guard": {
+              "checked": 6521,
+              "blocked": 56,
+              "alerted": 11,
+              "allowed": 6454,
+              "errors": 0,
+              "total_us": 870652.1,
+              "mean_us": 133.5,
+              "enforcement": true,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 6521,
+                "findings": 11,
+                "source_values": 1,
+                "observation_errors": 0,
+                "joint_checked": 6521,
+                "joint_findings": 22,
+                "planner_runs": 45,
+                "persist_writes": 1,
+                "isolated": 0,
+                "result_denied": 22,
+                "sources": 1,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 2387,
+                  "cache_hits": 25106,
+                  "cpu_ns": 69682321,
+                  "wall_ns": 72734313,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 6443,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": {
+                  "queries": 0,
+                  "cache_hits": 0,
+                  "errors": 0,
+                  "wall_ns": 0,
+                  "source_discharged": 1256,
+                  "model_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b"
+                }
+              }
+            },
+            "records_dropped": {}
+          },
+          {
+            "benchmark_only": true,
+            "role": "framework",
+            "period": "pair3_guard",
+            "mode": "guard",
+            "pid": 1,
+            "guard": {
+              "checked": 25,
+              "blocked": 24,
+              "alerted": 0,
+              "allowed": 1,
+              "errors": 0,
+              "total_us": 1119.0,
+              "mean_us": 44.8,
+              "enforcement": true,
+              "fail_closed": true,
+              "block_severities": [
+                "BLOCK"
+              ],
+              "knowledge_graph": {
+                "enabled": true,
+                "checked": 0,
+                "findings": 0,
+                "source_values": 0,
+                "observation_errors": 0,
+                "joint_checked": 0,
+                "joint_findings": 0,
+                "planner_runs": 0,
+                "persist_writes": 0,
+                "isolated": 0,
+                "result_denied": 0,
+                "sources": 0,
+                "artifacts": 0,
+                "saturated": false,
+                "version": "R8",
+                "features": [
+                  "isolation",
+                  "joint",
+                  "multi_hop",
+                  "persistence",
+                  "planner"
+                ],
+                "persistence": true,
+                "restored": false,
+                "expired": false,
+                "namespace": "f8024074da90ba762e4e18d40fb0e9b24e4ea7fa762725cc40e56814056a36b9"
+              },
+              "r10": {
+                "version": "R11",
+                "features": [
+                  "flow",
+                  "semantic"
+                ],
+                "semantic_backend": "sparse",
+                "semantic": {
+                  "inferences": 0,
+                  "cache_hits": 0,
+                  "cpu_ns": 0,
+                  "wall_ns": 0,
+                  "threshold": 0.5,
+                  "encoder_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a",
+                  "head_sha256": "2b36abf3e875aed866743daaadb66562e9b346c076653584f4fc5d6e58bcb48a"
+                },
+                "business_flow": {
+                  "observed": 0,
+                  "sources": 0,
+                  "findings": 0,
+                  "writes": 0,
+                  "saturated": false,
+                  "persistence": true,
+                  "restored": false,
+                  "namespace": "93cc9c11cff9f0e616fc17d6a4d933039bedae13c3ba5777b083f351cc5ccc32"
+                },
+                "contextual_intent": null
+              }
+            },
+            "records_dropped": {}
+          }
+        ],
+        "runtime_source_sha256": {
+          "track2/collector/auth_diagnostic.py": "6aea6f04f3ba941c23a0086ef5394cd939ca54cf939573bd4ee4e2522054e672",
+          "track2/collector/auth_diagnostic_entry.py": "637ba8967d3f1af90e7ee07bd085c7145169c5fff8c6d8cfcaa46df727e81c01",
+          "track2/collector/control_endpoint.py": "b85179c72f78918054fc134afafac70d742737b409c8e01bbead9eef4cc09a8e",
+          "track2/collector/gateway.py": "67b52abe672c05d4a452593fcf191477057956f8a100b13a87e078ba66142d60",
+          "track2/collector/inline_guard.py": "863eee38343c76bdd75e8d043c85d8c609fd93d27efcb20eb1f47d3e50b9969f",
+          "track2/collector/inprocess.py": "6d563adda1e1e5d907b1356d24075744404f78a68b2217e49d431cf82aeb3dc7",
+          "track2/collector/json_codec.py": "dcf16df16f76533d0ba1dc3c206bb5f249b1e96020e9c068507a9b84ca3a132b",
+          "track2/collector/model_proposer.py": "b7ef2ba6b61707b90f1fbc99bc9b7e6a393f9cbdfc94357a83fa173bbd3f68ed",
+          "track2/collector/native_stack.py": "804b25d1847e22bfc89e22afbe22c3bc12cb21e296e95e771779eea99a5aae1b",
+          "track2/collector/pooled_transport.py": "61b0539817b1764a4b632fdd84b3ec4cd937e5b0623dad631a93080199289243",
+          "track2/collector/stackd.py": "68d06c80a300c87af2af93661830f0b71fbf2a4ab3aae876eb32fb5f122fce00",
+          "track2/collector/upstream.py": "941d4712fc558edd0ab3050a68fd013c742033257bcb718c9959a1d96b765767",
+          "track2/detector/action_intent.py": "0f1148a70d919731369e34ae04718e14323f557c3d4f3500b112fb811cc974a7",
+          "track2/detector/business_flow.py": "0fa689f4ebdb50d90315e40398bf88aec213ad998c938d0bc1c95d46030b3e16",
+          "track2/detector/contextual_intent.py": "639c21af0518186d0d5b8b38db488b1ef147a4902d2500fbe8ee072c7a7333aa",
+          "track2/detector/controlled_executor.py": "2625809f63683139a490872373d03d8e107e9490cb091c9961d80f17b0a195f4",
+          "track2/detector/document_classifier.py": "7abac2cdb579de9d9851e9959d8f54be98a56e991fa1811bfe88c9751397ff43",
+          "track2/detector/execution_contract.py": "84b760c477b16ea994492698a18732a77c2c6414d777107b5958aaa052b97b10",
+          "track2/detector/generalization.py": "a146cc82604fb37f0d750aa6a0002cdae53abaa8042540df8cf0c34546d1ae0b",
+          "track2/detector/injection_classifier.py": "88aeacecd9f46f06f392657a34f4cf0109604e6cbe007f6081854c38bfa31724",
+          "track2/detector/intervention.py": "02c1cf4cec8d10fbd0ddcbb2ba263309ea3a0576f00c4a8fed21bbcf3b0e65ac",
+          "track2/detector/knowledge_graph.py": "d3f91afa0b957d78aa18541821888495361089884b194d12052cc17e77fbacf2",
+          "track2/detector/model_controlled_executor.py": "e90811a13a342dd5614400fabd7accdc45751a2965a3299b3983fa516e0dec65",
+          "track2/detector/rules.py": "94fce1793da536037c2f2c520c5db8d4ce7637f91925528aeb761ffcf9b77703",
+          "track2/detector/runtime_r10.py": "09ddd2ce37d5c451912e904e49e569b7f0c73a014a8f5ac5dcdd65b781db65e6",
+          "track2/detector/security_graph.py": "08761458b3a705423d769efe7af447821628624a1bd0eae063751ebe74ee8f9e",
+          "track2/detector/semantic_model.py": "a68faed35c12ad7474e170e663f14293df79b72dee28f60977efec5496e69db7",
+          "track2/detector/session.py": "f21d6e8259ed670e86291093525683a8e5dc9d41fbe7ea5c8fe7585dbab6ee5c",
+          "track2/detector/source_contract.py": "2cdf45e77bc3e13e20617ea58f6d915455c850866716acc1f7dee601ba243bb3",
+          "track2/detector/sparse_injection_model.py": "a90f5b98fee44e1dd6d08eb1efe80154ab5b289f13751b11631b595a80ffd7f3",
+          "track2/detector/task_policy.py": "7781fc56044f8f494cf74c015df56e5ad298c9e181f2289508a7c7632156fb44",
+          "track2/detector/trusted_plan.py": "e8b16dfb3836cab35ce775335b2144fef1b6813af0692c402f601cb024be0184",
+          "track2/bench/aggregate_profile.py": "0c76efa7f0d81e9772965e7948a2def4228937e0c2451eab18f39b9553505269",
+          "track2/bench/attack_path_latency.py": "ebbbb6658726278b5ea41e5f1e4b6f9d4b8032dc35a4979c3e15ae10b349fc06",
+          "track2/bench/bench_ab.py": "699c222cf9a7d6d914dda9f53276bb32f55ae3d25c6843b467cc39897fb91acd",
+          "track2/bench/concurrency.py": "ba70e1a95c28427381dc1e9d98584fed512ea0d64a682ccfc1f7e0bf3cda829b",
+          "track2/bench/cpu_attribution.py": "4d4f187a55baeca30c95fc5678803756a3f8a00ecc015707d0faf71f9b9ac8f8",
+          "track2/bench/cpu_detail.py": "88a1dff25ee7329a57f754bc06b347df306cb0e3c8b243e5b83d65d7e48fea35",
+          "track2/bench/m5_inprocess.py": "ba1be2093d79e7bad85e5d86a0df70388a1cb59d76b9c42ad9b2867186d1ad16",
+          "track2/bench/perf.py": "41e5228b4b6adf73ff2a90bfe4866026312ac1b16eeafd3579ceba723c412f17",
+          "track2/bench/profile_workload.py": "8c1c644d2b579e9bb4c5ea1d915dabb712e96606ab695cc9fe41db96727fc4bf"
+        },
+        "driver_source_sha256": {
+          "_scratch/competition/agentrange/scenario-runner/runner.py": "6bfadc90ed04935fa32c0816022cae9e3b0fa97c3f1c2a0689aa255833da6a7f",
+          "_scratch/competition/agentrange/scenario-runner/token_readiness.py": "d295d93f6c72dcf3ef8be111caac8f6ecdcbd8134f8a5c6b0b7690685b4237bb",
+          "05_\u590d\u73b0\u811a\u672c/qualify_same_pid.py": "a158d43de72eb054a6460253ada6d0dbded991be3894f0d1a5be5827d802cd76",
+          "05_\u590d\u73b0\u811a\u672c/deploy_r3.py": "efea4b8cc40bc741569a7f071ae2289eb46caaca3b9e4697f9c5c6674d172120",
+          "05_\u590d\u73b0\u811a\u672c/qualify_inprocess.py": "154b09387166b4e5576b9e8c110a114d297ac8e70c81bd96b725a7630facf3a8",
+          "05_\u590d\u73b0\u811a\u672c/result_policy.official.json": "266cd716438c8aa14889f45f4619e0839ddfff328ba86be2cc811eddf186af5e"
+        }
+      },
+      "incremental_single_core_cpu_percent": 4.576336469942958
+    }
+  ],
+  "pair_count_planned": 3,
+  "production_entrypoint_changed": false,
+  "transport_note": "R11 standard-adapter connection pooling applies identically to baseline and guard; original prepared headers/cookies and TLS/proxy policy preserved",
+  "source_sha256": {
+    "track2/collector/auth_diagnostic.py": "6aea6f04f3ba941c23a0086ef5394cd939ca54cf939573bd4ee4e2522054e672",
+    "track2/collector/auth_diagnostic_entry.py": "637ba8967d3f1af90e7ee07bd085c7145169c5fff8c6d8cfcaa46df727e81c01",
+    "track2/collector/control_endpoint.py": "b85179c72f78918054fc134afafac70d742737b409c8e01bbead9eef4cc09a8e",
+    "track2/collector/gateway.py": "67b52abe672c05d4a452593fcf191477057956f8a100b13a87e078ba66142d60",
+    "track2/collector/inline_guard.py": "863eee38343c76bdd75e8d043c85d8c609fd93d27efcb20eb1f47d3e50b9969f",
+    "track2/collector/inprocess.py": "6d563adda1e1e5d907b1356d24075744404f78a68b2217e49d431cf82aeb3dc7",
+    "track2/collector/json_codec.py": "dcf16df16f76533d0ba1dc3c206bb5f249b1e96020e9c068507a9b84ca3a132b",
+    "track2/collector/model_proposer.py": "b7ef2ba6b61707b90f1fbc99bc9b7e6a393f9cbdfc94357a83fa173bbd3f68ed",
+    "track2/collector/native_stack.py": "804b25d1847e22bfc89e22afbe22c3bc12cb21e296e95e771779eea99a5aae1b",
+    "track2/collector/pooled_transport.py": "61b0539817b1764a4b632fdd84b3ec4cd937e5b0623dad631a93080199289243",
+    "track2/collector/stackd.py": "68d06c80a300c87af2af93661830f0b71fbf2a4ab3aae876eb32fb5f122fce00",
+    "track2/collector/upstream.py": "941d4712fc558edd0ab3050a68fd013c742033257bcb718c9959a1d96b765767",
+    "track2/detector/action_intent.py": "0f1148a70d919731369e34ae04718e14323f557c3d4f3500b112fb811cc974a7",
+    "track2/detector/business_flow.py": "0fa689f4ebdb50d90315e40398bf88aec213ad998c938d0bc1c95d46030b3e16",
+    "track2/detector/contextual_intent.py": "639c21af0518186d0d5b8b38db488b1ef147a4902d2500fbe8ee072c7a7333aa",
+    "track2/detector/controlled_executor.py": "2625809f63683139a490872373d03d8e107e9490cb091c9961d80f17b0a195f4",
+    "track2/detector/document_classifier.py": "7abac2cdb579de9d9851e9959d8f54be98a56e991fa1811bfe88c9751397ff43",
+    "track2/detector/execution_contract.py": "84b760c477b16ea994492698a18732a77c2c6414d777107b5958aaa052b97b10",
+    "track2/detector/generalization.py": "a146cc82604fb37f0d750aa6a0002cdae53abaa8042540df8cf0c34546d1ae0b",
+    "track2/detector/injection_classifier.py": "88aeacecd9f46f06f392657a34f4cf0109604e6cbe007f6081854c38bfa31724",
+    "track2/detector/intervention.py": "02c1cf4cec8d10fbd0ddcbb2ba263309ea3a0576f00c4a8fed21bbcf3b0e65ac",
+    "track2/detector/knowledge_graph.py": "d3f91afa0b957d78aa18541821888495361089884b194d12052cc17e77fbacf2",
+    "track2/detector/model_controlled_executor.py": "e90811a13a342dd5614400fabd7accdc45751a2965a3299b3983fa516e0dec65",
+    "track2/detector/rules.py": "94fce1793da536037c2f2c520c5db8d4ce7637f91925528aeb761ffcf9b77703",
+    "track2/detector/runtime_r10.py": "09ddd2ce37d5c451912e904e49e569b7f0c73a014a8f5ac5dcdd65b781db65e6",
+    "track2/detector/security_graph.py": "08761458b3a705423d769efe7af447821628624a1bd0eae063751ebe74ee8f9e",
+    "track2/detector/semantic_model.py": "a68faed35c12ad7474e170e663f14293df79b72dee28f60977efec5496e69db7",
+    "track2/detector/session.py": "f21d6e8259ed670e86291093525683a8e5dc9d41fbe7ea5c8fe7585dbab6ee5c",
+    "track2/detector/source_contract.py": "2cdf45e77bc3e13e20617ea58f6d915455c850866716acc1f7dee601ba243bb3",
+    "track2/detector/sparse_injection_model.py": "a90f5b98fee44e1dd6d08eb1efe80154ab5b289f13751b11631b595a80ffd7f3",
+    "track2/detector/task_policy.py": "7781fc56044f8f494cf74c015df56e5ad298c9e181f2289508a7c7632156fb44",
+    "track2/detector/trusted_plan.py": "e8b16dfb3836cab35ce775335b2144fef1b6813af0692c402f601cb024be0184",
+    "track2/bench/aggregate_profile.py": "0c76efa7f0d81e9772965e7948a2def4228937e0c2451eab18f39b9553505269",
+    "track2/bench/attack_path_latency.py": "ebbbb6658726278b5ea41e5f1e4b6f9d4b8032dc35a4979c3e15ae10b349fc06",
+    "track2/bench/bench_ab.py": "699c222cf9a7d6d914dda9f53276bb32f55ae3d25c6843b467cc39897fb91acd",
+    "track2/bench/concurrency.py": "ba70e1a95c28427381dc1e9d98584fed512ea0d64a682ccfc1f7e0bf3cda829b",
+    "track2/bench/cpu_attribution.py": "4d4f187a55baeca30c95fc5678803756a3f8a00ecc015707d0faf71f9b9ac8f8",
+    "track2/bench/cpu_detail.py": "88a1dff25ee7329a57f754bc06b347df306cb0e3c8b243e5b83d65d7e48fea35",
+    "track2/bench/m5_inprocess.py": "ba1be2093d79e7bad85e5d86a0df70388a1cb59d76b9c42ad9b2867186d1ad16",
+    "track2/bench/perf.py": "41e5228b4b6adf73ff2a90bfe4866026312ac1b16eeafd3579ceba723c412f17",
+    "track2/bench/profile_workload.py": "8c1c644d2b579e9bb4c5ea1d915dabb712e96606ab695cc9fe41db96727fc4bf"
+  },
+  "driver_source_sha256": {
+    "_scratch/competition/agentrange/scenario-runner/runner.py": "6bfadc90ed04935fa32c0816022cae9e3b0fa97c3f1c2a0689aa255833da6a7f",
+    "_scratch/competition/agentrange/scenario-runner/token_readiness.py": "d295d93f6c72dcf3ef8be111caac8f6ecdcbd8134f8a5c6b0b7690685b4237bb",
+    "05_\u590d\u73b0\u811a\u672c/qualify_same_pid.py": "a158d43de72eb054a6460253ada6d0dbded991be3894f0d1a5be5827d802cd76",
+    "05_\u590d\u73b0\u811a\u672c/deploy_r3.py": "efea4b8cc40bc741569a7f071ae2289eb46caaca3b9e4697f9c5c6674d172120",
+    "05_\u590d\u73b0\u811a\u672c/qualify_inprocess.py": "154b09387166b4e5576b9e8c110a114d297ac8e70c81bd96b725a7630facf3a8",
+    "05_\u590d\u73b0\u811a\u672c/result_policy.official.json": "266cd716438c8aa14889f45f4619e0839ddfff328ba86be2cc811eddf186af5e"
+  },
+  "container_identity_start_pid": {
+    "agentrange-opspilot-app-1": "8440bdfb1d3b409a615a6dac5f0e6eddcd69e4166338cc4d82b5dcb3d098ef34|2026-10-04T11:10:56.636184397Z|8356",
+    "agentrange-guard-gateway": "f34890e728fa5e3ae8fe5806bdf62b21efc4f1f32a347050be9a03c9f9f9fd7a|2026-10-04T11:10:56.630940337Z|8355",
+    "agentrange-guard-stackd": "be25e060a537808a473a3fa1c5a0a37ffe3b3665fbc6e826e7613c5a548055ea|2026-10-04T11:10:58.213220574Z|8488",
+    "agentrange-r11-verifier": "f81321623ac53776c401183de1f6ed2c74f3f8a7f3efd3a6d98a7c7adccd937b|2026-10-04T09:43:34.708938093Z|8929"
+  },
+  "official_runtime_attestation": {
+    "agentrange-opspilot-app-1": {
+      "files_matched": 17,
+      "image": "sha256:34305ac3de6312451e1f29a21f1afa8d606e84ad8547b6ca8422497bd55f4719",
+      "aggregate_sha256": "50eac208dab8018aa4f0d979249b2653f41d41bd5b3c3df05e5e9cda723c6e3d"
+    },
+    "agentrange-mcp-customer-db-1": {
+      "files_matched": 14,
+      "image": "sha256:9f6cd5861b245e95156c2f16bd9d0ff90e6fd1cfe8079f8a70500197a35f0d26",
+      "aggregate_sha256": "7d3c65bc244d3c3f8f49e3fabeba58679938aad4fba93ab835264553dce4c925"
+    },
+    "agentrange-mcp-shell-runner-1": {
+      "files_matched": 14,
+      "image": "sha256:9f6cd5861b245e95156c2f16bd9d0ff90e6fd1cfe8079f8a70500197a35f0d26",
+      "aggregate_sha256": "7d3c65bc244d3c3f8f49e3fabeba58679938aad4fba93ab835264553dce4c925"
+    },
+    "agentrange-mcp-notes-sync-1": {
+      "files_matched": 14,
+      "image": "sha256:9f6cd5861b245e95156c2f16bd9d0ff90e6fd1cfe8079f8a70500197a35f0d26",
+      "aggregate_sha256": "7d3c65bc244d3c3f8f49e3fabeba58679938aad4fba93ab835264553dce4c925"
+    },
+    "agentrange-mcp-threat-intel-1": {
+      "files_matched": 14,
+      "image": "sha256:9f6cd5861b245e95156c2f16bd9d0ff90e6fd1cfe8079f8a70500197a35f0d26",
+      "aggregate_sha256": "7d3c65bc244d3c3f8f49e3fabeba58679938aad4fba93ab835264553dce4c925"
+    },
+    "agentrange-mcp-gitlab-1": {
+      "files_matched": 14,
+      "image": "sha256:9f6cd5861b245e95156c2f16bd9d0ff90e6fd1cfe8079f8a70500197a35f0d26",
+      "aggregate_sha256": "7d3c65bc244d3c3f8f49e3fabeba58679938aad4fba93ab835264553dce4c925"
+    },
+    "agentrange-mcp-monitoring-1": {
+      "files_matched": 14,
+      "image": "sha256:9f6cd5861b245e95156c2f16bd9d0ff90e6fd1cfe8079f8a70500197a35f0d26",
+      "aggregate_sha256": "7d3c65bc244d3c3f8f49e3fabeba58679938aad4fba93ab835264553dce4c925"
+    },
+    "agentrange-mcp-knowledge-1": {
+      "files_matched": 14,
+      "image": "sha256:9f6cd5861b245e95156c2f16bd9d0ff90e6fd1cfe8079f8a70500197a35f0d26",
+      "aggregate_sha256": "7d3c65bc244d3c3f8f49e3fabeba58679938aad4fba93ab835264553dce4c925"
+    },
+    "agentrange-mcp-sandbox-exec-1": {
+      "files_matched": 14,
+      "image": "sha256:9f6cd5861b245e95156c2f16bd9d0ff90e6fd1cfe8079f8a70500197a35f0d26",
+      "aggregate_sha256": "7d3c65bc244d3c3f8f49e3fabeba58679938aad4fba93ab835264553dce4c925"
+    }
+  },
+  "conservative_native_idle_percent": 0.46108960183188963,
+  "mean": 4.78959388724683,
+  "max": 5.021633492132453,
+  "stdev": 0.22324188097325043,
+  "all_observed_pairs_below_5pct": false,
+  "container_ids_unchanged": true
+}

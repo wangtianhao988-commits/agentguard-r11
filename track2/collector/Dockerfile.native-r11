@@ -1,0 +1,3 @@
+FROM agentrange-opspilot-app-r10
+# Preserve the original official app and the immutable R10 image/tag.
+RUN pip install --no-cache-dir "msgspec==0.21.1"

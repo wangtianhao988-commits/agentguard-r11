@@ -1,0 +1,3376 @@
+{
+  "scope": "Synthetic native InlineGuard stress, declared release policy, no real MCP/model planning; nonempty private ledger",
+  "n": 480,
+  "attacks": 240,
+  "false_positives": 0,
+  "missed": 0,
+  "max_decision_ms": 320.6992000050377,
+  "cpu_s": 0.34375,
+  "wall_s": 0.704968000005465,
+  "restored_sources": 12,
+  "private_state_shipped": false,
+  "cases": [
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 320.6992000050377
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.46270000166259706
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8657999860588461
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8284000214189291
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.212499977555126
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1826000118162483
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.12630000128410757
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.12130002141930163
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.37709999014623463
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36380000528879464
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.4196000120136887
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.496099983341992
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 2.1581000182777643
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 2.260500012198463
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.23899998632259667
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.20260000019334257
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.6873999955132604
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.6590999837499112
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.3277999823912978
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8545999880880117
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2080000014975667
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.202800020109862
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.12809998588636518
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11770002311095595
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3766000154428184
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.367600005120039
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8095999946817756
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.797900022007525
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2045000039506704
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1696000001393259
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11710001854225993
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11299998732283711
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.37349999183788896
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3611999854911119
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8023000264074653
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7980999944265932
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2642000219784677
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.2876999971922487
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.15100001473911107
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.12719997903332114
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.38300000596791506
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.371300004189834
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.893999997060746
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8549999911338091
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.186200010124594
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.193000003695488
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.12270000297576189
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11340001947246492
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3734000201802701
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.364200008334592
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7899999909568578
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7986999989952892
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1624000035226345
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1815000034403056
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11449999874457717
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10839998139999807
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36380000528879464
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.360800011549145
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7830999966245145
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7945999968796968
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2848000042140484
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.2346000003162771
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.1323999895248562
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11670001549646258
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.37579998024739325
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36100001307204366
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7957000052556396
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7951000006869435
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1717999877873808
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1867000139318407
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.1142999972216785
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10649999603629112
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3635999746620655
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3588999970816076
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7923000084701926
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7885000086389482
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.17050000699237
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1689999955706298
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.23400000645779073
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10850001126527786
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36249999538995326
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3559000033419579
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7940000214148313
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7945999968796968
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1790999851655215
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.3728000049013644
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.14399999054148793
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.12360000982880592
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3752000047825277
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.37739999243058264
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7971000159159303
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7993000035639852
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1761000205297023
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1799999920185655
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11510000331327319
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10790000669658184
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3659999929368496
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36449998151510954
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7962999807205051
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7895999879110605
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.178800011985004
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.18530000327155
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11270001414231956
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.1052000152412802
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36959999124519527
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.35960000241175294
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7937999907881021
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7923999801278114
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2373999925330281
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.286899991100654
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.15510001685470343
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.12240000069141388
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.37360002170316875
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.35940000088885427
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8028000011108816
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7903000223450363
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.174800010630861
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1847999994643033
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11650001397356391
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10979999206028879
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.367900007404387
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36040000850334764
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7993000035639852
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7918999763205647
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1690999963320792
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1728999961633235
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11369999265298247
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10689999908208847
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3674000035971403
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.362000020686537
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7998000073712319
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7882000063546002
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.247100008185953
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.175400015199557
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.1134999911300838
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.23370000417344272
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.4107000131625682
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3760000108741224
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7961999799590558
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7885999802965671
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1802999943029135
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.178500009700656
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11580000864341855
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10900001507252455
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3622999938670546
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.363900006050244
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7890000124461949
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7851000118535012
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1732999992091209
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1685000208672136
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11369999265298247
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10529998689889908
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36070001078769565
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3664999967440963
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7927000115159899
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7917000039014965
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1692999978549778
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.202299987198785
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.1142999972216785
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.1097000204026699
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.47229998745024204
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3934999986086041
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7960000075399876
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7868000247981399
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1648999934550375
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.172300020698458
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11130000348202884
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10609999299049377
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36210002144798636
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3749000024981797
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8033000049181283
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7947999984025955
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.196400000480935
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.198899990413338
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11330001871101558
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.12509999214671552
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36199999158270657
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.37200000951997936
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8142000006046146
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8056999940890819
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1972999782301486
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.2449999921955168
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11329998960718513
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.1044000091496855
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3738000232260674
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.49909998779185116
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8447000000160187
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.829399999929592
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2052000092808157
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1829000141005963
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11649998486973345
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11150000500492752
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3668999997898936
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.37059999885968864
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8001000096555799
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8029000018723309
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1735000007320195
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1707000085152686
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11150000500492752
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10549998842179775
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36360000376589596
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3561000048648566
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8125000167638063
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8000999805517495
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.215800002682954
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1747999815270305
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11409999569877982
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10689999908208847
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.5112999933771789
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.45709998812526464
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8061999978963286
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8034000056795776
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.186200010124594
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1804999958258122
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11190000805072486
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10550001752562821
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3698999935295433
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.35780001780949533
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8031000033952296
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7979999936651438
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1748999822884798
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1710999824572355
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.10850001126527786
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10450000991113484
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3667999990284443
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.35930000012740493
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7935999892652035
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7872999995015562
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.203499996336177
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1762000212911516
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11110000195913017
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10490001295693219
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.35909999860450625
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3635000030044466
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7888000109232962
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1452000180725008
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2147999950684607
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.196700002765283
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.1283000165130943
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11639998410828412
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.378700002329424
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.37640001391991973
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7983999967109412
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8020999957807362
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.25790000311099
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1829999857582152
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11790002463385463
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11029999586753547
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.367300002835691
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36410000757314265
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7972000166773796
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7985999982338399
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2051000085193664
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1721999908331782
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.12080001761205494
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10770000517368317
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3657999914139509
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36109998472966254
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7924000092316419
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8769000123720616
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2128999806009233
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1814000026788563
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.1283000165130943
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11510000331327319
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.37029999657534063
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.377499993192032
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8029000018723309
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7970000151544809
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1805999965872616
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1778000043705106
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.1145999995060265
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.1078000059351325
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.37120000342838466
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36279999767430127
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7948999991640449
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7980999944265932
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.197699981275946
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1758999899029732
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11600001016631722
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10740000288933516
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.360800011549145
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.35749998642131686
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7980999944265932
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7787000213284045
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.25790000311099
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.2536999711301178
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.13500000932253897
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11950000771321356
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.38460001815110445
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3782999992836267
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8162000158336014
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8157999836839736
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.199799997266382
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1867999855894595
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.12429998605512083
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11500000255182385
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.38159999530762434
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.35879999632015824
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8128999907057732
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8058000239543617
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2313000042922795
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1756000167224556
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11500000255182385
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11170000652782619
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3623999946285039
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3603000077418983
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7997999782674015
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7921000069472939
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.177300000563264
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.3232000055722892
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.13050000416114926
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11190000805072486
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3704999980982393
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3620999923441559
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8050999895203859
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7908999978099018
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.197300007333979
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1733999999705702
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11449999874457717
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10559998918324709
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36279999767430127
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.37090000114403665
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7976999913807958
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7825000211596489
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2212999863550067
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.188399997772649
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11629998334683478
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10579999070614576
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36189999082125723
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3635000030044466
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8062999986577779
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7902999932412058
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1863000108860433
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.2652000004891306
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.12770001194439828
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11170000652782619
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.37299998803064227
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.367300002835691
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8004999835975468
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7919999770820141
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1743999784812331
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1783000081777573
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11340001947246492
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10400000610388815
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3595000016503036
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3640000068116933
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7964000105857849
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7926000107545406
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.210899994475767
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1777000036090612
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11180000728927553
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.1033000007737428
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3750999749172479
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3586999955587089
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7974999898578972
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7987999997567385
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1759999906644225
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.2617999745998532
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.14369998825713992
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.1236999814864248
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.37369999336078763
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.37670001620426774
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8024999988265336
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8061999978963286
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.188700000056997
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1749999830499291
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.1134999911300838
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.1078000059351325
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.375300005543977
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3623999946285039
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8030000026337802
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8019999950192869
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2354000064078718
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.188399997772649
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11610001092776656
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10679999832063913
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3733999910764396
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36380000528879464
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8211999956984073
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.808100012363866
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1740000045392662
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.2177000171504915
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.16889997641555965
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.1446999958716333
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.39770000148564577
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.37609998253174126
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8127999899443239
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8073000062722713
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.184099994134158
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1709000100381672
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11330001871101558
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11230001109652221
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36860001273453236
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3606000100262463
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7964000105857849
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7995000050868839
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1712000123225152
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.2068000214640051
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11930000619031489
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10779997683130205
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3609000123105943
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36189999082125723
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7936999900266528
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7930000138003379
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1799999920185655
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.169500028481707
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11950000771321356
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10539998766034842
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.35930000012740493
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3556000010576099
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.9306999854743481
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7997999782674015
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1705999786499888
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1822999804280698
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11759999324567616
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11059999815188348
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3643000090960413
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3595000016503036
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.811800011433661
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7915000023785979
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2193000002298504
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1757999891415238
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11500000255182385
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11400002404116094
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36210002144798636
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3529000096023083
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8009999874047935
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7924000092316419
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.169200026197359
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.17790000513196
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11130000348202884
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10269999620504677
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36219999310560524
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3632000007200986
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7881000055931509
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8809000137262046
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1756999883800745
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1692999978549778
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11419999646022916
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10540001676417887
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.36709997220896184
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.3597000031732023
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7975999906193465
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7895999879110605
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1971000058110803
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1769999982789159
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11149997590109706
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10380000458098948
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.35860002390109
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.35360001493245363
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7964999822434038
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7900000200606883
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.1765999952331185
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1618999997153878
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.11189997894689441
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.10340000153519213
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3680999798234552
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.35719998413696885
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.8021000248845667
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7961000083014369
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.2512000103015453
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.200700004119426
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.14200000441633165
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.12410001363605261
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.368500011973083
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.36040000850334764
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7974999898578972
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.7951000006869435
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.181900006486103
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1841999948956072
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.12010001228190958
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.11069999891333282
+    },
+    {
+      "malicious": false,
+      "encoding": "identity",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.3650000144261867
+    },
+    {
+      "malicious": true,
+      "encoding": "identity",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.35439999192021787
+    },
+    {
+      "malicious": false,
+      "encoding": "base64",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.7946999976411462
+    },
+    {
+      "malicious": true,
+      "encoding": "base64",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.8034000056795776
+    },
+    {
+      "malicious": false,
+      "encoding": "hex",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 1.177300000563264
+    },
+    {
+      "malicious": true,
+      "encoding": "hex",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 1.1716000153683126
+    },
+    {
+      "malicious": false,
+      "encoding": "partial",
+      "refused": false,
+      "r10_witnesses": 0,
+      "wall_ms": 0.1109000004362315
+    },
+    {
+      "malicious": true,
+      "encoding": "partial",
+      "refused": true,
+      "r10_witnesses": 1,
+      "wall_ms": 0.1033000007737428
+    }
+  ],
+  "runtime_variant": "R11 sparse + contextual verifier + business ledger",
+  "measurement_limit": "Host detector CPU only; auxiliary model service CPU not included here; unpaced synthetic calls, not full native 5% qualification"
+}

@@ -1,0 +1,15 @@
+FROM python:3.12-slim
+
+# py-spy reads Python stacks out of a live process through SYS_PTRACE, without
+# importing anything into it. That is the whole reason this is a separate container:
+# the protected application is not modified, and the capability is confined here.
+RUN pip install --no-cache-dir "fastapi==0.111.0" "uvicorn[standard]==0.30.1" "py-spy==0.4.1"
+
+WORKDIR /app
+COPY collector/stackd.py .
+
+EXPOSE 8090
+# TARGET_PID is 1 because this container shares the protected application's PID
+# namespace (`pid: "container:..."` in compose), so the app's uvicorn is PID 1 here.
+ENV TARGET_PID=1
+CMD ["uvicorn", "stackd:app", "--host", "0.0.0.0", "--port", "8090", "--log-level", "warning"]

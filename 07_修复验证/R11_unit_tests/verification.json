@@ -1,0 +1,130 @@
+{
+  "checks": [
+    {
+      "file": "test_action_intent.py",
+      "exit_code": 0,
+      "tests": 3
+    },
+    {
+      "file": "test_business_flow.py",
+      "exit_code": 0,
+      "tests": 7
+    },
+    {
+      "file": "test_contextual_intent.py",
+      "exit_code": 0,
+      "tests": 4
+    },
+    {
+      "file": "test_control_http.py",
+      "exit_code": 0,
+      "tests": 3
+    },
+    {
+      "file": "test_evidence_loss.py",
+      "exit_code": 0,
+      "tests": 1
+    },
+    {
+      "file": "test_execution_contract.py",
+      "exit_code": 0,
+      "tests": 4
+    },
+    {
+      "file": "test_framework_stack.py",
+      "exit_code": 0,
+      "tests": 1
+    },
+    {
+      "file": "test_generalization.py",
+      "exit_code": 0,
+      "tests": 6
+    },
+    {
+      "file": "test_intervention.py",
+      "exit_code": 0,
+      "tests": 7
+    },
+    {
+      "file": "test_json_codec.py",
+      "exit_code": 0,
+      "tests": 4
+    },
+    {
+      "file": "test_knowledge_graph.py",
+      "exit_code": 0,
+      "tests": 14
+    },
+    {
+      "file": "test_model_controlled_executor.py",
+      "exit_code": 0,
+      "tests": 4
+    },
+    {
+      "file": "test_native_r10.py",
+      "exit_code": 0,
+      "tests": 2
+    },
+    {
+      "file": "test_native_stack.py",
+      "exit_code": 0,
+      "tests": 2
+    },
+    {
+      "file": "test_pooled_transport.py",
+      "exit_code": 0,
+      "tests": 2
+    },
+    {
+      "file": "test_r11_boundaries.py",
+      "exit_code": 0,
+      "tests": 4
+    },
+    {
+      "file": "test_r8_audit.py",
+      "exit_code": 0,
+      "tests": 4
+    },
+    {
+      "file": "test_r8_authorization.py",
+      "exit_code": 0,
+      "tests": 5
+    },
+    {
+      "file": "test_r9_audit.py",
+      "exit_code": 0,
+      "tests": 2
+    },
+    {
+      "file": "test_regressions.py",
+      "exit_code": 0,
+      "tests": 53
+    },
+    {
+      "file": "test_security_graph.py",
+      "exit_code": 0,
+      "tests": 9
+    },
+    {
+      "file": "test_semantic_r10.py",
+      "exit_code": 0,
+      "tests": 4
+    },
+    {
+      "file": "test_source_contract.py",
+      "exit_code": 0,
+      "tests": 3
+    },
+    {
+      "file": "test_sparse_injection.py",
+      "exit_code": 0,
+      "tests": 2
+    },
+    {
+      "file": "test_trusted_plan.py",
+      "exit_code": 0,
+      "tests": 7
+    }
+  ],
+  "tests": 157
+}

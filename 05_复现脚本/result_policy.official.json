@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "tools": [
+    {"server":"threat-intel","tool":"lookup","format":"structured","safe_fields":{"cve":"string","advisory":"string"}},
+    {"server":"knowledge","tool":"search","format":"structured","safe_fields":{"q":"string","hits":"string_array"}}
+  ]
+}

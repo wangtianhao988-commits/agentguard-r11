@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "plans": [
+    {
+      "id": "security-advisory",
+      "principals": ["zsec"],
+      "inputs": {"cve": {"type": "string", "enum": ["CVE-2025-0001", "CVE-2025-0002"], "max_length": 32}},
+      "steps": [{"id": "advisory", "server": "threat-intel", "tool": "lookup", "arguments": {"cve": {"user": "cve"}}, "result_labels": ["untrusted"]}]
+    },
+    {
+      "id": "knowledge-reference",
+      "principals": ["lwang", "zsec", "rdev", "oeng"],
+      "inputs": {"query": {"type": "string", "max_length": 512}},
+      "steps": [{"id": "reference", "server": "knowledge", "tool": "search", "arguments": {"q": {"user": "query"}}, "result_labels": ["untrusted"]}]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+# Observation layer for the OpsPilot range -- added WITHOUT touching the original
+# compose file or any range source.
+#
+# Docker Compose merges this automatically. It does two things:
+#
+#   1. runs the gateway on `opspilot-net` with host port 8101;
+#   2. repoints the agent's outbound endpoints at the gateway:
+#        LLM_BASE  -> gateway   (observation B)
+#        MCP_*     -> gateway   (observation C)
+#
+# The driver is pointed at the gateway by setting `OPSPILOT_BASE` in its own
+# environment (see `run_range.ps1`), giving observation A.
+#
+# Why this is the right shape: the brief demands a GENERAL algorithm and says the
+# range is only for validation. A guard that needs the target's source edited is
+# neither. Here the target is untouched and only its configuration is redirected,
+# which is what a real deployment would do.
+#
+# Note the deliberate omission: `C2_URL` on mcp-notes-sync is NOT redirected.
+# Egress to c2-sink is part of the scenario definition, not part of the agent under
+# protection; a guard that rewrites the attacker's own infrastructure is measuring
+# itself.
+
+services:
+  guard-gateway:
+    build:
+      # Context is `track2/`, not `track2/collector/`, so the detector can be copied
+      # in rather than forked. Three levels up: agentrange/ -> competition/ ->
+      # _scratch/ -> repo root.
+      context: ../../../track2
+      dockerfile: collector/Dockerfile
+    container_name: agentrange-guard-gateway
+    ports:
+      - "8101:8080"
+    networks:
+      - opspilot-net
+    volumes:
+      - ./evidence:/evidence
+      # Source is MOUNTED, not only baked.
+      #
+      # `docker compose build` twice left the container running stale code: the first
+      # time it reported "Built" and the image still lacked the change, and the
+      # `--no-cache` retry could not run because Docker Hub was unreachable to re-pull
+      # the base layer. Both times the guard looked healthy while running something
+      # other than what had just been written -- the same failure shape as every other
+      # defect in this project.
+      #
+      # The Dockerfile still bakes the code, and that is the deliverable form. The
+      # mount is what makes iteration trustworthy, and it means what runs is always
+      # exactly what is on disk.
+      - ../../../track2/collector:/src/collector:ro
+      - ../../../track2/detector:/src/detector:ro
+    environment:
+      AGENT_BASE: http://opspilot-app:8000
+      LLM_BASE_UPSTREAM: http://llm-stub:8000
+      MCP_BASE: "http://mcp-{server}:8000"
+      LANGFLOW_BASE_UPSTREAM: http://langflow:7860
+      RECORD_DIR: /evidence
+      # Pass through from the host so the pass-through-vs-observing comparison
+      # actually varies something. It did not the first time: the variable was never
+      # declared here, so both measured runs recorded evidence and produced two
+      # near-identical numbers that appeared to confirm a hypothesis they had not
+      # tested at all.
+      RECORD_ENABLED: "${RECORD_ENABLED:-1}"
+      # Which response streams to record. `used` = only the ones a detector, report or
+      # evaluator actually reads. `all` restores full traffic capture.
+      RECORD_RESPONSES: "${RECORD_RESPONSES:-used}"
+      GUARD_ENFORCE: "${GUARD_ENFORCE:-1}"
+      # Needed because the source is mounted rather than only baked.
+      PYTHONPATH: /src/detector:/src/collector
+      # Empty disables stack capture; set to the stackd URL to enable it.
+      STACK_URL: "${STACK_URL:-http://guard-stackd:8090/stack}"
+    command: ["uvicorn", "--app-dir", "/src/collector", "gateway:app",
+              "--host", "0.0.0.0", "--port", "8080", "--log-level", "warning"]
+    restart: unless-stopped
+
+  # Application call-stack capture (J2's "应用内函数栈").
+  #
+  # Two settings make this work and both are deliberate:
+  #   pid: "container:..."  shares the protected application's PID namespace, so the
+  #                         app's process is visible here without touching it;
+  #   cap_add: SYS_PTRACE   is what py-spy needs to read another process's memory.
+  # Neither modifies the application. The capability is confined to this container,
+  # and the guard process itself does not hold it.
+  guard-stackd:
+    build:
+      context: ../../../track2
+      dockerfile: collector/Dockerfile.stackd
+    container_name: agentrange-guard-stackd
+    # **Ordering is a real dependency, not a nicety.**
+    #
+    # This container shares `opspilot-app`'s PID namespace. If the app is not up yet,
+    # Docker refuses with "failed to join PID namespace: container ... is not running"
+    # and stackd stays down while nothing else notices. The failure then cascades: a
+    # `guard-inventory` run against the partially-starting range wrote an inventory with
+    # **5 tools instead of 9**, the detector loaded the short profile,
+    # `sandbox-exec.run_test` lost its code-derived capabilities and fell back to
+    # inference, and a held-out-seed run reported **1256 false positives** -- a number
+    # that looks like a detection result and was a startup-order artefact.
+    depends_on:
+      opspilot-app:
+        condition: service_started
+    pid: "container:agentrange-opspilot-app-1"
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp=unconfined
+    networks:
+      - opspilot-net
+    ports:
+      - "8102:8090"
+    restart: unless-stopped
+
+  # Asset inventory / risk scanner (M1/M2). Runs on the target network because the
+  # 8 mcp-* services publish no host ports, and with the runtime socket mounted
+  # because enumerating the deployment is the point.
+  guard-inventory:
+    build:
+      context: ../../../track2
+      dockerfile: inventory/Dockerfile
+    container_name: agentrange-guard-inventory
+    networks:
+      - opspilot-net
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./evidence:/evidence
+      # Read-only mount of the deployment source so skill scripts can be read.
+      # A production scanner would pull these from the image layers; mounting is the
+      # honest stand-in and is noted as such in the report.
+      - ./:/range:ro
+    environment:
+      DOCKER_HOST: unix:///var/run/docker.sock
+    command: >
+      python run_scan.py
+      --out /evidence/inventory.json
+      --docker-filter agentrange
+      --range-root /range
+      --skills-root /range/skills
+    restart: "no"
+
+  opspilot-app:
+    environment:
+      LLM_BASE: http://guard-gateway:8080/v1
+      MCP_CUSTOMER_DB: http://guard-gateway:8080/mcp/customer-db
+      MCP_SHELL_RUNNER: http://guard-gateway:8080/mcp/shell-runner
+      MCP_NOTES_SYNC: http://guard-gateway:8080/mcp/notes-sync
+      MCP_THREAT_INTEL: http://guard-gateway:8080/mcp/threat-intel
+      MCP_GITLAB: http://guard-gateway:8080/mcp/gitlab
+      MCP_MONITORING: http://guard-gateway:8080/mcp/monitoring
+      MCP_KNOWLEDGE: http://guard-gateway:8080/mcp/knowledge
+      MCP_SANDBOX_EXEC: http://guard-gateway:8080/mcp/sandbox-exec

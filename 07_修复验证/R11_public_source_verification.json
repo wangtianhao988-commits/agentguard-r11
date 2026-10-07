@@ -1,0 +1,157 @@
+{
+  "tests": 157,
+  "skipped": 11,
+  "checks": [
+    {
+      "file": "test_action_intent.py",
+      "tests": 3,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_business_flow.py",
+      "tests": 7,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_contextual_intent.py",
+      "tests": 4,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_control_http.py",
+      "tests": 3,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_evidence_loss.py",
+      "tests": 1,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_execution_contract.py",
+      "tests": 4,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_framework_stack.py",
+      "tests": 1,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_generalization.py",
+      "tests": 6,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_intervention.py",
+      "tests": 7,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_json_codec.py",
+      "tests": 4,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_knowledge_graph.py",
+      "tests": 14,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_model_controlled_executor.py",
+      "tests": 4,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_native_r10.py",
+      "tests": 2,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_native_stack.py",
+      "tests": 2,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_pooled_transport.py",
+      "tests": 2,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_r11_boundaries.py",
+      "tests": 4,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_r8_audit.py",
+      "tests": 4,
+      "skipped": 4,
+      "exit_code": 0
+    },
+    {
+      "file": "test_r8_authorization.py",
+      "tests": 5,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_r9_audit.py",
+      "tests": 2,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_regressions.py",
+      "tests": 53,
+      "skipped": 7,
+      "exit_code": 0
+    },
+    {
+      "file": "test_security_graph.py",
+      "tests": 9,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_semantic_r10.py",
+      "tests": 4,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_source_contract.py",
+      "tests": 3,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_sparse_injection.py",
+      "tests": 2,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "file": "test_trusted_plan.py",
+      "tests": 7,
+      "skipped": 0,
+      "exit_code": 0
+    }
+  ],
+  "competition_qualified": false
+}

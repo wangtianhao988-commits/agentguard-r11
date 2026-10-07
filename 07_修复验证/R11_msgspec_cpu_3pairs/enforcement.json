@@ -1,0 +1,20 @@
+{
+ "decisions": 6568,
+ "blocked": 102,
+ "alerted": 11,
+ "allowed": 6455,
+ "benign_sessions_seen": 5120,
+ "benign_refused": 0,
+ "malicious_sessions_seen": 56,
+ "malicious_refused": 56,
+ "malicious_pre_send_refused": 56,
+ "malicious_result_intervened": 22,
+ "result_projections": 0,
+ "result_refusals": 22,
+ "malicious_alerted_only": 0,
+ "benign_alerted": 0,
+ "latency_us": {
+  "p50": 127.8,
+  "p99": 272.0
+ }
+}

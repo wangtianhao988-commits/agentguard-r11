@@ -1,0 +1,39 @@
+{
+  "method": "Wilson 95% intervals over trajectories; tasks repeat, not independent task-family generalization",
+  "attempted_attack_valid_interception": {
+    "numerator": 290,
+    "denominator": 949,
+    "rate": 0.3055848261327713,
+    "wilson95": [
+      0.27710897605891316,
+      0.3356282777789905
+    ]
+  },
+  "exposed_attack_valid_interception": {
+    "numerator": 290,
+    "denominator": 530,
+    "rate": 0.5471698113207547,
+    "wilson95": [
+      0.5046039183092976,
+      0.5890568477736788
+    ]
+  },
+  "historically_successful_valid_interception": {
+    "numerator": 130,
+    "denominator": 134,
+    "rate": 0.9701492537313433,
+    "wilson95": [
+      0.9257619685882362,
+      0.9883316653445152
+    ]
+  },
+  "normal_refusal": {
+    "numerator": 10,
+    "denominator": 132,
+    "rate": 0.07575757575757576,
+    "wilson95": [
+      0.041668064785746674,
+      0.1338413785585272
+    ]
+  }
+}

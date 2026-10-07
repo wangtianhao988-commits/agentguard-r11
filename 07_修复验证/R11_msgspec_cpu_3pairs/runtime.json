@@ -1,0 +1,58 @@
+{
+ "agent": {
+  "tp": 56,
+  "fp": 0,
+  "fn": 0,
+  "tn": 5120,
+  "recall": 1.0,
+  "precision": 1.0,
+  "fp_ids": [],
+  "miss_ids": [],
+  "per_scenario": {
+   "B-RD": {
+    "hit": 0,
+    "n": 1281
+   },
+   "B-OPS": {
+    "hit": 0,
+    "n": 1282
+   },
+   "B-SEC": {
+    "hit": 0,
+    "n": 1273
+   },
+   "B-SUP": {
+    "hit": 0,
+    "n": 1284
+   },
+   "C2-A": {
+    "hit": 12,
+    "n": 12
+   },
+   "C2-B": {
+    "hit": 11,
+    "n": 11
+   },
+   "C2-C": {
+    "hit": 11,
+    "n": 11
+   },
+   "C2-D": {
+    "hit": 11,
+    "n": 11
+   },
+   "M-1": {
+    "hit": 11,
+    "n": 11
+   }
+  }
+ },
+ "framework": {
+  "requests": 25,
+  "flagged": 24,
+  "rules": {
+   "framework-code-injection": 12,
+   "framework-path-traversal": 12
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "customer-summary",
+      "principals": ["lwang"],
+      "permissions": [
+        {
+          "server": "customer-db",
+          "tool": "query",
+          "arguments": {"tenant": ["acme"]}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+FROM agentrange-opspilot-app-official-r4
+# Add runtime inference dependencies without editing any official application,
+# skills or MCP source. Runtime source hashes are independently attested.
+RUN pip install --no-cache-dir "onnxruntime==1.23.2" "tokenizers==0.22.1" "numpy==2.2.6"
