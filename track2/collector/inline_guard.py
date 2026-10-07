@@ -105,6 +105,10 @@ class InlineGuard:
         if __import__('os').environ.get('GUARD_R10') == '1':
             from runtime_r10 import R10Security
             self.r10=R10Security()
+        self.external_boundary = None
+        if __import__('os').environ.get('GUARD_R12_BOUNDARY') == '1':
+            from external_boundary import ExternalBoundary
+            self.external_boundary = ExternalBoundary(self.r10.intent if self.r10 else None)
         self.stats = {"checked": 0, "blocked": 0, "alerted": 0, "allowed": 0,
                       "errors": 0, "total_us": 0.0}
 
@@ -189,6 +193,11 @@ class InlineGuard:
                             # Use the existing auditable deny-result intervention.
                             delivered,audit=engine.policy._deny(body,'external result impersonates trusted instructions')
                             audit['r9_trust_boundary']=suspicious
+                    if self.enabled and ok and audit is None and self.external_boundary:
+                        boundary = self.external_boundary.inspect(s.prompt, call, call_id, body)
+                        if boundary['block'] and hasattr(engine, 'policy'):
+                            delivered,audit=engine.policy._deny(body,'external instruction boundary violation' if boundary['error'] is None else 'external boundary verification failed')
+                            audit['r12_boundary'] = boundary
                     if self.enabled and ok and audit is None and self.r10:
                         semantic=self.r10.inspect_result(body,s)
                         if semantic and semantic['block'] and hasattr(engine,'policy'):
