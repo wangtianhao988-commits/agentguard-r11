@@ -25,10 +25,17 @@ def main():
     with urllib.request.urlopen(config['GUARD_R11_INTENT_URL']+'/health', timeout=3) as response:
         assert response.status == 200
     assert not (DATA/'results/R12D_frozen').exists(), 'Formal run already started'
+    for entry in json.loads((DATA/'download_manifest.json').read_text(encoding='utf-8'))['traces']:
+        payload = (DATA/'raw'/entry['path']).read_bytes()
+        assert hashlib.sha256(payload).hexdigest() == entry['sha256'], entry['path']
+        assert hashlib.sha1(b'blob '+str(len(payload)).encode()+b'\0'+payload).hexdigest() == entry['git_blob'], entry['path']
     preservation = json.loads((REPORTS/'r12d_original_preservation.json').read_text(encoding='utf-8'))
     for name, expected in preservation['original_python_sha256'].items():
         assert digest(Path(name)) == expected, name
     assert digest(ROOT/'05_复现脚本/evaluate_external_r10.py') == preservation['evaluator_unmodified_sha256']
+    original_data = ROOT.parent/'AgentGuard_达标攻坚版R11/07_修复验证/external_r11_gemini'
+    assert digest(original_data/'protocol.json') == preservation['original_protocol_sha256']
+    assert digest(original_data/'results/R11_frozen/cases.jsonl') == preservation['original_frozen_cases_sha256']
     protocol['candidate'] = 'R12-D minimal boundary; original R11 semantic verifier reused'
     for name in ('track2/collector/inline_guard.py', 'track2/detector/external_boundary.py'):
         protocol['sources']['R10'][name] = digest(ROOT/name)
@@ -50,6 +57,7 @@ def main():
                 'selection_sha256': digest(DATA/'selection.json'),
                 'benchmark_manifest_sha256': digest(DATA/'download_manifest.json'),
                 'source_sha256': protocol['sources']['R10'], 'original_preservation_verified': True}
+    manifest['docker_container'] = json.loads(subprocess.check_output(['docker', 'inspect', 'agentrange-r11-verifier'], text=True))[0]
     (REPORTS/'r12d_run_manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
     with (REPORTS/'r12d_full_run.log').open('w', encoding='utf-8') as log:
         result = subprocess.run(command, cwd=ROOT, env=environment, stdout=log, stderr=subprocess.STDOUT)

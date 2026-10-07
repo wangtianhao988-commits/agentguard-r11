@@ -1,5 +1,7 @@
 # Runtime changes
 
+Baseline commit: `b139a12727e58cd4005490971c904ccae5bc3dad`. Only collector wiring and new boundary logic change runtime behavior. Collector line endings normalized to LF before the formal freeze to make the patch reviewable.
+
 ```diff
 diff --git a/track2/collector/inline_guard.py b/track2/collector/inline_guard.py
 index fc61bb6..69c5711 100644

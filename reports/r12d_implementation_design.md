@@ -2,7 +2,7 @@
 
 ## Scope and current state
 
-Implementation and synthetic interface smoke tests are complete. Formal validation has NOT started. No actual recall or false-positive claim is made.
+Implementation, synthetic interface smoke tests and three live synthetic verifier probes are complete. At this pre-freeze checkpoint formal validation has NOT started. Actual results will be recorded separately in r12d_full_metrics.md; no smoke-test accuracy claim is made.
 
 The isolated baseline copies the 33 frozen R11 source files, unchanged evaluator and existing model assets. Original R11 and historical results are preserved.
 
@@ -35,6 +35,8 @@ The unchanged evaluator uses the original `validated_interception` definition an
 
 Synthetic smoke tests verify original task propagation, exact call binding, unmatched-source nonchecking, benign passthrough, actual collector `DENY_RESULT`, request-ID preservation, explicit error accounting and missing-verifier rejection. These tests do not establish model accuracy.
 
-## Current external blocker
+## Service restoration history
 
 Docker Desktop fails at inference-manager initialization: the existing `dockerInference` communication file cannot be accessed. Restart and reversible rename failed. Automatic approval review rejected deleting this stale communication file. No container recreation, data reset or formal benchmark run has been performed.
+
+Docker was subsequently opened by the user. Its current engine had no containers or images. The user explicitly authorized rebuilding only the original verifier from the preserved configuration. The pinned image was downloaded, the original named network restored, and one verifier container created with unchanged configuration. Health is now OK. A premature health probe returned model-loading 503 before model initialization; no semantic query was executed then. Three subsequent live synthetic probes returned two benign and one malicious verdict with zero errors. No prompt or timeout change was made.
